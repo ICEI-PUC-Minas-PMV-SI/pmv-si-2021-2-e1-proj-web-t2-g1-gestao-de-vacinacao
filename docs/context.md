@@ -21,5 +21,4 @@ Desenvolver um site colaborativo e gratuito que disponibilize informações conf
 Os problemas apresentados geram intenso estresse e desgaste na população e nos profissionais de saúde, dificultando assim o sucesso da campanha de vacinação. Profissionais de saúde ficam sobrecarregados ao final do dia e os indivíduos têm seu horário e dia a dia afetado pela falta de organização estrutural. Com isso, nosso projeto visa otimizar o trabalho dos profissionais de saúde e promover mais clareza referente a vacinação para a população. 
  
 # Público-Alvo 
-População em geral de uma determinada cidade que é integrante do grupo elegível para participar da Campanha de Vacinação contra Covid-19.  
-Profissionais de saúde que efetuam o cadastro e registro de pessoas vacinadas. 
+População em geral de uma determinada cidade que é integrante do grupo elegível para participar da Campanha de Vacinação contra Covid-19. Profissionais de saúde que efetuam o cadastro e registro de pessoas vacinadas. 
