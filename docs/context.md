@@ -1,14 +1,13 @@
 # Introdução 
-O presente projeto pretende contribuir para o país no contexto atual da pandemia, criando um site para fornecer a todo cidadão brasileiro um serviço de utilidade pública contendo informações sobre a localização dos postos de vacinação e da quantidade disponível de vacinas em sua cidade com o intuito de resolver as problemáticas vigentes de logística e acesso ao público referente à vacinação nacional, tendo como objetivo auxiliar os profissionais de saúde, proporcionar melhor organização dos dados de vacinação, e promover maior interação entre a população e os postos de saúde. 
+O presente projeto pretende contribuir para o país no contexto atual da pandemia, criando um site para fornecer a todo cidadão brasileiro um serviço de utilidade pública contendo informações sobre a localização dos postos de vacinação e da disponibilidade de vacinas em sua cidade. Com o intuito de resolver as problemáticas vigentes de logística e acesso ao público as informações referentes à campanha de vacinação contra Covid-19, tendo como objetivo auxiliar os profissionais de saúde, proporcionando melhor organização dos dados de vacinação, e promover maior interação entre a população e os postos de saúde. 
  
 # Problema
-O fato do Brasil ser um país com dimensões continentais, somado ao atraso e desorganização no que diz respeito à aquisição e distribuição de vacinas teve como consequência problemas estruturais que afetam tanto os profissionais de saúde quanto a população.
-A ineficiência do atual programa nacional de vacinação resultou em diversos problemas que nosso sistema se propõe a resolver, como:
+O fato do Brasil ser um país com dimensões continentais, somado ao atraso e desorganização no que diz respeito à aquisição e distribuição de vacinas[1] teve como consequência problemas estruturais que afetam tanto os profissionais de saúde quanto a população. A ineficiência do atual programa nacional de vacinação resultou em diversos problemas[2] que nosso sistema se propõe a resolver, como: 
  - Acesso limitado às informações referentes às políticas de vacinação;
  - Número inferior ao esperado da vacinação diária;
  - Longas filas nos postos de vacinação;
  - Falta de informação referente a disponibilidade de doses;
- - Em muitos lugares a gestão dos dados das pessoas que estão se vacinando é feita de forma arcaica, escrita à mão em algum caderno, por exemplo, o que dificulta a gestão            coordenada desses dados, e facilita a perda ou deterioração desses dados. 
+ - Em muitos lugares a gestão dos dados das pessoas que estão se vacinando é feita de forma manual, escrita à mão em um formulário, o que dificulta a gestão coordenada desses dados, e facilita a perda ou deterioração desses dados. 
  
 # Objetivo geral 
 Desenvolver um site colaborativo e gratuito que disponibilize informações confiáveis e atualizadas para que o usuário consulte sobre os postos de vacinação e doses disponíveis em sua cidade até o dia 17/12/21. 
