@@ -7,7 +7,7 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Criação de um modelo de Sistema Web para gestão de vacinação contra Covid-19 que auxilie os profissionais de saúde, proporcionando melhor organização dos dados de vacinação, e um canal de informação entre a população e os postos de saúde.   
 
 ## Integrantes
 
