@@ -15,7 +15,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Usuário do sistema  | Saber qual vacina está sendo aplicada no posto de saúde próximo ao meu local de trabalho. | Tomar a primeira dose da vacina. |
-|Agente de Saúde     | Registrar a quantidade de vacinas disponíveis no posto| Fazer o controle do estoque de vacinas. |
+|Agente de Saúde     | Registrar a quantidade de vacinas disponíveis no posto. | Fazer o controle do estoque de vacinas. |
 
 
 ## Requisitos
