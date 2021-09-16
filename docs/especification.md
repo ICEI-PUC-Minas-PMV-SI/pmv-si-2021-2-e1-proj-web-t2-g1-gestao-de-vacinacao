@@ -5,9 +5,10 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 ## Personas
 
 1. **Valdicéia Barcelos** tem 44 anos, é Técnica em Enfermagem, casada, tem 2 filhos e trabalha na central de imunização de Contagem/MG numa jornada de 30h semanais. Atualmente é uma das funcionárias efetivas do munícipio responsável pela distribuição de vacinas da Covid-19 aos locais de vacinação. Nesse período da pandemia participou ativamente da campanha de vacinação da população como agente de imunização. Ela relata que os dados sobre a vacinação são preenchidos manualmente, em um formulário padrão contendo os campos específicos para anotação dos dados do paciente. Posteriormente esses formulários são enviados ao departamento administrativo da Secretaria de Saúde de Contagem, para que as informações possam ser lançadas no sistema informatizado do SUS para a gestão da Campanha Nacional de Imunização (PNI) contra Covid-19.
-
-2. Bianca, 25 anos, classe média, brasileira, moradora do Rio de Janeiro. É formada em jornalismo e está em seu primeiro emprego. Apesar de ter uma rotina desorganizada, Bianca tenta manter um estilo de vida saudável indo a academia e fazendo atividades ao ar livre. Normalmente, sempre saia com seus amigos para se divertir aos finais de semana, mas devido as restrições impostas pela sua cidade e o medo da contaminação do vírus circulante, ela   aprendeu a se divertir sozinha e a desfrutar sua própria companhia. Por causa do seu trabalho, Bianca é viciada em notícias e mesmo assim constata confusão para achar informações concretas sobre a questão das doses na vacinação de sua cidade contra o COVID-19.
-## Histórias de Usuários
+   
+2. Bianca, 25 anos, classe média, brasileira, moradora do Rio de Janeiro. É formada em jornalismo e está em seu primeiro emprego. Apesar de ter uma rotina desorganizada, Bianca tenta manter um estilo de vida saudável indo a academia e fazendo atividades ao ar livre. Normalmente, sempre saia com seus amigos para se divertir aos finais de semana, mas devido as restrições impostas pela sua cidade e o medo da contaminação do vírus circulante, ela   aprendeu a se divertir sozinha e a desfrutar sua própria companhia. Por causa do seu trabalho, Bianca é viciada em notícias e mesmo assim constata confusão para achar informações concretas sobre a questão das doses na vacinação de sua cidade contra o COVID-19. 
+3. Roberto e morador da cidade de Pouso Alegre Minas Gerais, e tem 38 anos de idade, ele está à procura de postos de vacinação contra a Covid-19, para obter sua segunda dose. Na primeira vacina foi aplicada a da companhia AstraZeneca, porém o posto próximo a sua residência possui apenas Coronavac e Pfizer. Ele está buscando postos de vacinação em área mais próxima de sua residência para estar tomando a segunda dose da AstraZeneca. 
+## Histórias de Usuário
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
@@ -18,10 +19,15 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`    |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|---------------------------------------|----------------------------------------|
-|Bianca      |Uma interface que mostre os postos com vacinas disponíveis|Para proteger a saúde pública e a individual|
+|Bianca      |Uma interface que mostre os postos com vacinas disponíveis|Para proteger a saúde pública e a individual|    
 |Agente da Informação          |Informar notícias mais concretas a população sobre vacinas e postos de saúde|Ajudar no combate contra a COVID-19|
-
-## Requisitos
+ 
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`    |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|---------------------------------------|----------------------------------------|
+|Roberto     |Um sistema pratico que me mostre localização e quantidades de vacinas|Que eu possa ter informações precisas sobre postos de vacinação com localidade próxima ao meu endereço e vacinas disponíveis |    
+|Funcionário          |Um sistema que possa inserir dados sobre as vacinas, e recolher informações dos usuários  |Ter controle dos dados dos usuários, e quantidades de vacinas a serem lançadas |
+ 
+## Requisitos   
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
 
