@@ -6,7 +6,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Ana Laura Silva tem 21 anos e trabalha em um supermercado no centro da cidade. Como seu horário de trabalho não é compatível com o horário de funcionamento do posto de saúde, ela não conseguiu tomar a primeira dose da vacina no posto próximo à sua casa. Ana pensa em usar o seu horário de almoço para se vacinar, mas não sabe qual é o ponto de vacinação mais próximo do seu trabalho, e, por isso, busca alguma ferramenta na internet que indique qual é o lugar mais próximo para se vacinar.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
@@ -26,8 +26,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Saber qual vacina está sendo aplicada no posto de saúde próximo ao meu local de trabalho | Tomar a primeira dose da vacina |
-|Agente de Saúde     | Registrar a quantidade de vacinas disponíveis no posto| Fazer o controle do estoque de vacinas |
+|Usuário do sistema  | Saber qual vacina está sendo aplicada no posto de saúde próximo ao meu local de trabalho. | Tomar a primeira dose da vacina. |
+|Agente de Saúde     | Registrar a quantidade de vacinas disponíveis no posto| Fazer o controle do estoque de vacinas. |
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
