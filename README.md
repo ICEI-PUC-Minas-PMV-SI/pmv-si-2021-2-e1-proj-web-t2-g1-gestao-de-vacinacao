@@ -14,7 +14,6 @@ Criação de um modelo de Sistema Web para gestão de vacinação contra Covid-1
 * Andressa Cordeiro Kahn
 * Geocacio Viviano Nascimento de Souza
 * Lucas Fonseca do Nascimento
-* Thiago Augusto Cardoso e Silva
 * Vinicius Menezes Gomes
 * Wesley Gabriel dos Santos Pereira
 
