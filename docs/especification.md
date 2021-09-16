@@ -30,6 +30,10 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |--------------------|---------------------------------------|----------------------------------------|
 |Roberto     |Um sistema pratico que me mostre localização e quantidades de vacinas|Que eu possa ter informações precisas sobre postos de vacinação com localidade próxima ao meu endereço e vacinas disponíveis |    
 |Funcionário          |Um sistema que possa inserir dados sobre as vacinas, e recolher informações dos usuários  |Ter controle dos dados dos usuários, e quantidades de vacinas a serem lançadas |
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE`    |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|---------------------------------------|----------------------------------------|
+|Agente de Saúde     | Registrar a quantidade de vacinas disponíveis no posto. | Fazer o controle do estoque de vacinas. |
+|Ana Laura           | Saber qual vacina está sendo aplicada no posto de saúde próximo ao meu local de trabalho. | Tomar a primeira dose da vacina. |
 
 ## Requisitos   
 
