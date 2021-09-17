@@ -28,7 +28,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Funcionário | Um sistema que possa inserir dados sobre as vacinas, e recolher informações dos usuários |Ter controle dos dados dos usuários, e quantidades de vacinas a serem lançadas |
 |Agente de Saúde | Registrar a quantidade de vacinas disponíveis no posto. | Fazer o controle do estoque de vacinas. |
 |Ana Laura | Saber qual vacina está sendo aplicada no posto de saúde próximo ao meu local de trabalho. | Tomar a primeira dose da vacina. |
-|Liane Pereira | Uma interface que mostra a localização dos postos de saúde e quais vacinas tem no posto de saúde. | Ter a informação de onde tem a vacina que você procura sem se deslocar ate o local. |
+|Liane Pereira | Uma interface que mostra a localização dos postos de saúde e quais vacinas tem disponivel no posto de saúde. | Ter a informação de onde tem a vacina que você procura sem se deslocar ate o local. |
 |Agente de Saúde | Uma interface para inserir a quantidade de vacina e inserir a ficha das pessoas vacinadas. | Administrar as fichas e quantidade de vacinas com eficiência. |
 
 ## Requisitos   
