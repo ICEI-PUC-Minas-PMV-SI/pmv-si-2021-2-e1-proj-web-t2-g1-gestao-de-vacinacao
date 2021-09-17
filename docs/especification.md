@@ -12,6 +12,8 @@ Definição do problema e ideia de solução a partir da perspectiva do usuário
 
 4. Ana Laura Silva tem 21 anos e trabalha em um supermercado no centro da cidade. Como seu horário de trabalho não é compatível com o horário de funcionamento do posto de saúde, ela não conseguiu tomar a primeira dose da vacina no posto próximo à sua casa. Ana pensa em usar o seu horário de almoço para se vacinar, mas não sabe qual é o ponto de vacinação mais próximo do seu trabalho, e, por isso, busca alguma ferramenta na internet que indique qual é o lugar mais próximo para se vacinar.
 
+5. Liane Pereira Do Nascimento tem 42 anos, e trabalha como repositora de vendas e tem uma jornada semanal de 40h. E necessário que ela seja vacinada o mais rápido possível, com isso ela nos relatou sobre a dificuldade para ser vacinada pois é necessário que ela seja vacinada usando a Corona vac devido a problema de saúde, e teve grande dificuldade pois não sabia a localização dos postos de saúde que contém essa vacina.
+
 ## Histórias de Usuário
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -26,6 +28,9 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |Funcionário | Um sistema que possa inserir dados sobre as vacinas, e recolher informações dos usuários |Ter controle dos dados dos usuários, e quantidades de vacinas a serem lançadas |
 |Agente de Saúde | Registrar a quantidade de vacinas disponíveis no posto. | Fazer o controle do estoque de vacinas. |
 |Ana Laura | Saber qual vacina está sendo aplicada no posto de saúde próximo ao meu local de trabalho. | Tomar a primeira dose da vacina. |
+|Liane Pereira | Uma interface que mostra a localização dos postos de saúde e quais vacinas tem no posto de saúde. | Ter a informação de onde tem a vacina que você procura
+sem se deslocar ate o local. |
+|Agente de Saúde | Uma interface para inserir a quantidade de vacina e inserir a ficha das pessoas vacinadas. | Administrar as fichas e quantidade de vacinas com eficiência. |
 
 ## Requisitos   
 
