@@ -42,7 +42,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| Deve permitir a consulta dos locais de vacinação e o horário de funcionamento | ALTA | 
 |RF-002| Deve permitir gerenciar a disponibilidade de vacinas e o tipo no local de vacinação  | ALTA |
 |RF-003| Deve permitir gerenciar os dados sobre as pessoas vacinadas | ALTA |
-|RF-004| Deve permitir validar as informações a serem enviadas para a Secretaria de Saúde do Município | MÉDIA |
+|RF-004| Deve permitir a contagem regressiva de doses em tempo real | ALTA |
+|RF-005| Deve permitir validar as informações a serem enviadas para a Secretaria de Saúde do Município | MÉDIA |
 
 ### Requisitos não Funcionais
 
