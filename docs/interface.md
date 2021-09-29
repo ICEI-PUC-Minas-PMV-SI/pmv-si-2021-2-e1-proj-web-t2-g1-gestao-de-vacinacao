@@ -24,8 +24,15 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
  #### *Onde tem vacina?*
 
 ### Tela para LOGIN: Administrador
+
+![Tela de Login - Adm](https://user-images.githubusercontent.com/80281387/135330787-5e45ee80-e1e6-45f8-b7f2-05bee95f03ae.JPG)
+![Tela 2 - Adm](https://user-images.githubusercontent.com/80281387/135330928-b063bb50-0866-49ed-a380-c07b658a967c.JPG)
  
  #### *Cadastro e gerência do Profissional de Saúde*
+ 
+ ![Tela 3 - Gestão de agentes de saúde](https://user-images.githubusercontent.com/80281387/135330994-4b3f4728-6c75-4677-a5c5-939f6ee85956.JPG)
+ ![tela 4 - Cadastro de agente](https://user-images.githubusercontent.com/80281387/135331107-bddd2fbb-0455-4f85-987a-5916f0fc6544.JPG)
+![Tela 5 - exclusão](https://user-images.githubusercontent.com/80281387/135331149-249d63b3-aca0-48b8-9f81-3eccd63e61a1.JPG)
  
  #### *Cadastro e gerência de vacinas: tipo e quantidade*
  
