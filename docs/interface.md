@@ -31,6 +31,8 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
  
 ### Tela para LOGIN: Profissional de Saúde
 
+![Tela para LOGIN: Profissional de Saúde](https://user-images.githubusercontent.com/89883340/135325920-fdda4268-42e5-4eb4-9f9d-15a21a7e7fbf.png)
+
  #### *Filômetro: indicação de ocupação do local de vacinação*
  
  #### *Monitor de vacinas: tipo e quantidade*
