@@ -7,27 +7,37 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+![SGI-Covid19](https://user-images.githubusercontent.com/89739877/135291952-d942e8f1-df04-41cb-a6bc-de079ca49f30.jpg)
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
-
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+### Tela Principal (HOME)
+
+![Tela Principal (HOME)](https://user-images.githubusercontent.com/89739877/135296913-a6e16239-60c9-4415-b59b-8759ebddb878.jpg)
+
+### Tela Usuário
+
+ #### *Onde tem vacina?*
+
+### Tela para LOGIN: Administrador
+ 
+ #### *Cadastro e gerência do Profissional de Saúde*
+ 
+ #### *Cadastro e gerência de vacinas: tipo e quantidade*
+ 
+### Tela para LOGIN: Profissional de Saúde
+
+ #### *Filômetro: indicação de ocupação do local de vacinação*
+ 
+ #### *Monitor de vacinas: tipo e quantidade*
+ 
+ #### *Questionário para efetivar processo de vacinação*
+
+ #### *Cadastro de pessoa vacinada*
+ 
+ ![Tela cadastro de pessoa vacinada](https://user-images.githubusercontent.com/89739877/135299294-f1c8df72-bc3b-44b5-b27e-ac9ec427eae3.jpg)
 
 São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
