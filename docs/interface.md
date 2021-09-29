@@ -7,11 +7,13 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
 ## User Flow
 
-![SGI-Covid19](https://user-images.githubusercontent.com/89739877/135291952-d942e8f1-df04-41cb-a6bc-de079ca49f30.jpg)
-
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
+![SGI-Covid19](https://user-images.githubusercontent.com/89739877/135291952-d942e8f1-df04-41cb-a6bc-de079ca49f30.jpg)
+
 ## Wireframes
+
+São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
 
 ### Tela Principal (HOME)
 
@@ -38,6 +40,3 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
  #### *Cadastro de pessoa vacinada*
  
  ![Tela cadastro de pessoa vacinada](https://user-images.githubusercontent.com/89739877/135299294-f1c8df72-bc3b-44b5-b27e-ac9ec427eae3.jpg)
-
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
