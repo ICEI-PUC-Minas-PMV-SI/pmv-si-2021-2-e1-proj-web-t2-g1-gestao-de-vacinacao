@@ -25,8 +25,7 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ### Tela para LOGIN: Administrador
 
-![Tela de Login - Adm](https://user-images.githubusercontent.com/80281387/135330787-5e45ee80-e1e6-45f8-b7f2-05bee95f03ae.JPG)
-![Tela 2 - Adm](https://user-images.githubusercontent.com/80281387/135330928-b063bb50-0866-49ed-a380-c07b658a967c.JPG)
+![image](https://user-images.githubusercontent.com/80281387/135478795-a31bef68-4a8c-497f-a0c2-929eafce4304.png)
  
  #### *Cadastro e gerência do Profissional de Saúde*
  
