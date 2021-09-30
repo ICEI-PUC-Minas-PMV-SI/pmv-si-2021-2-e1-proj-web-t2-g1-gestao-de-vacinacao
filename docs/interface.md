@@ -27,6 +27,12 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ![image](https://user-images.githubusercontent.com/80281387/135478795-a31bef68-4a8c-497f-a0c2-929eafce4304.png)
  
+ #### *Cadastro e gerência do Profissional de Administrador* 
+ 
+ ![gestão admin](https://user-images.githubusercontent.com/80281387/135483048-82ae3762-270d-44a1-8133-56e7cdce7d05.JPG)
+ ![adicionar admin](https://user-images.githubusercontent.com/80281387/135483107-ef0086d9-2482-44d6-94ed-27857e6447b1.JPG)
+ ![exluir admin](https://user-images.githubusercontent.com/80281387/135483129-0f776bb4-88f5-41d1-b4ad-ae3cf9dca095.JPG)
+
  #### *Cadastro e gerência do Profissional de Saúde*
  
  ![Tela 3 - Gestão de agentes de saúde](https://user-images.githubusercontent.com/80281387/135330994-4b3f4728-6c75-4677-a5c5-939f6ee85956.JPG)
