@@ -37,6 +37,8 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
  #### *Cadastro e gerência de vacinas: tipo e quantidade*
  ![Cadastro e gerência de vacinas: tipo e quantidade](https://user-images.githubusercontent.com/89498275/135333033-87145fec-bf82-4af8-b066-97eca690ba0c.png)
 
+ #### Regiões de postos disponíveis e endereço  
+ ![Projeto Usuario puc](https://user-images.githubusercontent.com/89995455/135451789-8ac1a5c6-e739-400c-85a8-247ed1640c20.PNG)
  
 ### Tela para LOGIN: Profissional de Saúde
 
