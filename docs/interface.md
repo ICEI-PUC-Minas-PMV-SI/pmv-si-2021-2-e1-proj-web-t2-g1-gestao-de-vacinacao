@@ -19,6 +19,9 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ![Tela Principal (HOME)](https://user-images.githubusercontent.com/89739877/135658840-40dea3c9-be1b-4b3c-b370-27ac7ddf5285.jpg)
 
+ #### Regiões de postos disponíveis e endereço  
+ ![tela de usuario mapa de vacinas](https://user-images.githubusercontent.com/89995455/136214495-a3168861-b4d9-42a6-b0d5-b637ef2323be.PNG)
+
 ### Tela Ajuda
 
 ![Tela Ajuda](https://user-images.githubusercontent.com/89739877/135658907-89e2d848-318f-44fe-8943-3e2e72f94f4d.jpg)
@@ -45,9 +48,6 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
  
  #### *Cadastro e gerência de vacinas: tipo e quantidade*
  ![Cadastro e gerência de vacinas: tipo e quantidade](https://user-images.githubusercontent.com/89498275/135333033-87145fec-bf82-4af8-b066-97eca690ba0c.png)
-
- #### Regiões de postos disponíveis e endereço  
- ![tela de usuario mapa de vacinas](https://user-images.githubusercontent.com/89995455/136214495-a3168861-b4d9-42a6-b0d5-b637ef2323be.PNG)
 
 ### Tela para LOGIN: Profissional de Saúde
 
