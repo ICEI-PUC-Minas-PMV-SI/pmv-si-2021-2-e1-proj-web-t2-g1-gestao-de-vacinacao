@@ -13,9 +13,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 * Andressa Cordeiro Kahn
 * Geocacio Viviano Nascimento de Souza
-* Gustavo Batista Braga
 * Lucas Fonseca do Nascimento
-* Thiago Augusto Cardoso e Silva
 * Wesley Gabriel dos Santos Pereira
 
 ## Orientador
