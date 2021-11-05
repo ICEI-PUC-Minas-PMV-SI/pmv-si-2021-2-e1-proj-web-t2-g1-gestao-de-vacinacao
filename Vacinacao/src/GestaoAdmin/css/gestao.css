@@ -1,0 +1,168 @@
+/* Definições globais*/
+
+@charset "utf-8";
+
+/* Fontes */
+
+*{
+     font-family: "Times New Roman", Times, serif;;
+}
+
+/* Paleta de cores */
+
+.bg-primary-color{
+    background-color: #0152af;
+}
+
+.primary-color{
+    color: white;
+}
+
+.secondary-color{
+    color: #7a7a7a;
+}
+
+/* Navbar*/
+
+#navbar a:hover{
+    color: #a0abca;
+}
+
+#navbar a.active{
+    border-bottom: 1px solid white;
+}
+
+.navbar-brand{
+    display: flex;
+}
+
+.navbar-brand img{
+    width: 50px;
+}
+
+#navbar-items .navbar-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbar-items .nav-item{
+    margin: 0 3em;
+}
+.btn1 {
+    display: inline-block;
+    color: white;
+    background-color: #7e152b;
+    height: 50px;
+    line-height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-left: 900px;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    text-align: center; 
+    margin-bottom: 15px;
+    margin-top: 150px;
+}
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    text-align: center;    
+    margin-bottom: 15px;
+    margin-top:150px;
+}
+
+h3 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 850px;
+}
+#administradores {
+    margin-bottom: 0.2em;
+    margin-left: 100px;
+    color: #59429d;
+    display: block;
+    text-align: center;
+}
+
+/* Footer */
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    height: 70px; 
+    background-color: #0152af;
+}
+ 
+#footer img{
+    width: 50px;  
+    height: 50px; 
+}
+
+body {
+    background-color: #cae4fa;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    }
+    ul {
+       padding: 0px!important; 
+    }
+    .menu-principal {
+    width: 100%;
+    background-color: #0152af;
+    height: 60px;
+         
+}
+
+    main, .content {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+    }
+    .logo {
+     float: left;
+     padding: 16px;
+     width: 70%;
+    }
+    
+    .menu ul li {
+        display: inline-block;
+        color: #3f5069;
+        margin-left: 15px;
+        height: 50px;
+    }
+    
+    
+    .footer p {
+        width: 90%;
+        text-align: left;
+    
+    }
+    
+    .footer-2 p {
+        padding: 10px
+    }
+
+
+     
+    .body{background-color: #cae4fa;}
+
+
