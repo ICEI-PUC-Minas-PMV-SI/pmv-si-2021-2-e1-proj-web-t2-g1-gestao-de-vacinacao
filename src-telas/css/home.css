@@ -1,0 +1,152 @@
+/* Definições globais*/
+
+@charset "utf-8";
+
+/* Fontes */
+
+*{
+    font-family: "Times New Roman", Times, serif, sans-serif;
+}
+
+/* Paleta de cores */
+
+.bg-primary-color{
+    background-color: #0152af;
+}
+
+.primary-color{
+    color: white;
+}
+
+.secondary-color{
+    color: #7a7a7a;
+}
+
+/* Body */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #cae4fa;  
+}
+ 
+/* Header*/
+
+#header{
+    height: 108px;
+}
+
+#header2{
+    height: 124px;
+}
+
+/* Navbar*/
+
+#navbar a:hover{
+    color: #a0abca;
+}
+
+
+#navbar a.active{
+    border-bottom: 1px solid white;
+}
+
+.navbar-brand{
+    display: flex;
+}
+
+.navbar-brand img{
+    width: 50px;
+}
+
+#navbar-items .navbar-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbar-items .nav-item{
+    margin: 0 3em;
+}
+
+/* Menu 2 */
+
+.blue{
+    color: white;
+}
+
+/* Campo Main */
+
+#main{
+    width: 100vw;
+    height: calc(100vh - 178px) !important; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Campo Cadastro */
+#cadastro{
+    min-height: calc(80vh + 70px);
+    justify-content: center;   
+} 
+
+#cadastro h2{
+    text-align: center;
+}
+
+/* Campo Ajuda */
+
+#ajuda{
+    margin-bottom: 7px;
+}
+
+section{
+    text-align: justify;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 7px;
+    padding: 5px;
+}
+
+/* Footer */
+
+#footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    height: 70px;
+    background-color: #0152af;
+}
+
+#footer2{
+    background-color: #0152af;
+    color: white;
+    height: 70px;
+    position: relative;
+    z-index: -1;
+}
+
+
+/* #footer2{
+    background-color: #0152af;
+    color: white;
+    width: 100%;
+    height: 70px;
+} */
+
+/* @media (min-width: 1400px) {  
+    
+    #footer2{
+    background-color: #0152af;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    height: 70px; 
+    }
+    
+}  */

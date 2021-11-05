@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGI COVID-19</title>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo (2).png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container" id="header">
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+                <a href="#" class="navbar-brand primary-color">
+                    <img src="img/Logo.png" alt="SGI">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active primary-color" aria-current="page">Ajuda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Contatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Sobre o Projeto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-2" id="ajuda">
+        <div class="row">
+            <section class="col-md-12 mt-2" id="perguntas">
+                <h4 id="secao1">Perguntas frequentes:</h4>
+                <div class="accordion" id="pergunta1">
+                    <div class="accordion-item">
+                        <h6 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Pergunta #1
+                            </button>
+                        </h6>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h6 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Pergunta #2
+                            </button>
+                        </h6>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h6 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Pergunta #3
+                            </button>
+                        </h6>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-md-12 mt-2" id="termos">
+                <h4 id="secao2">Termos e condições de uso</h4>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti minus consectetur
+                    unde itaque sed odit, id omnis recusandae eum adipisci praesentium cumque vero dicta assumenda! Ea
+                    commodi nam possimus vero in recusandae repellat earum, fugit adipisci illo veritatis repudiandae et
+                    sed quasi blanditiis molestias eligendi est omnis ratione. Doloribus quam odio numquam perspiciatis,
+                    earum, esse at eius facere quasi praesentium natus animi sapiente? Praesentium error aspernatur
+                    autem expedita, cupiditate enim illum. Quam autem eum qui molestias ipsum, adipisci corrupti sunt
+                    ducimus soluta id, odio asperiores harum modi commodi earum at ipsam ea. Consequuntur et cupiditate
+                    nesciunt aliquid! Eos, numquam.</p>
+            </section>
+        </div>
+        <div class="row">
+            <section class="col-md-12 mt-2" id="privacidade">
+                <h4 id="secao3">Política de privacidade</h4>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil incidunt voluptas
+                    in alias ipsa quas, fugit libero aperiam blanditiis. Minus necessitatibus et expedita sit assumenda
+                    ullam enim deserunt nobis accusamus quaerat veniam repellendus excepturi, iste asperiores totam?
+                    Assumenda pariatur minus nulla? At recusandae omnis impedit. Quidem ab soluta blanditiis, eum, qui
+                    sapiente magnam unde quisquam odio dolorem nesciunt doloremque corrupti iste obcaecati veritatis
+                    incidunt necessitatibus. Nesciunt nam mollitia accusantium iste laudantium aliquid ducimus labore
+                    quas perspiciatis iure. Adipisci dolorem repellat modi cumque mollitia quidem quos incidunt
+                    consectetur. Blanditiis quae provident voluptas deleniti ullam impedit optio iusto amet corporis?
+                    Assumenda corrupti numquam vitae unde, vel fuga! Accusamus sunt consequatur, est vero culpa iure
+                    esse, error nulla, harum provident architecto laudantium.</p>
+            </section>
+        </div>
+        </div>
+    </main>
+
+    <footer class="conteiner" id="footer2">
+        <div class="d-flex justify-content-around py-2">
+            <div class="d-flex align-self-center mt-3">
+                <h6>Sistema de Gestão para Imunização contra COVID-19 &copy; 2021</h6>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

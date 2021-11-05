@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGI COVID-19</title>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo (2).png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container" id="header2">
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+                <a href="#" class="navbar-brand primary-color">
+                    <img src="img/Logo.png" alt="SGI">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Filômetro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Vacinômetro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active primary-color" aria-current="page">Formulário Anamnese</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="input-group">
+                                <input type="text" readonly class="form-control" placeholder="Usuário" aria-label="Username">
+                                <div class="dropdown">
+                                    <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropdown"
+                                        data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                        <i class="bi bi-person-circle"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown">
+                                        <li><a href="#" class="dropdown-item">Perfil</a></li>
+                                        <li><a href="#" class="dropdown-item">Sair</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" id="cadastro">
+        <h2>ANAMNESE VACINAÇÃO COVID-19</h2>
+        <form class="row g-2">
+            <!--  Vacinador -->
+            <div class="col-12 mt-2">
+                <label for="inputVacinador" class="form-label">VACINADOR:</label>
+                <input type="text" class="form-control" id="inputVacinador">
+            </div>
+            <!-- Data e Unidade de Saúde -->
+            <div class="col-3 mt-2">
+                <label for="inputData" class="form-label">DATA DE VACINAÇÃO:</label>
+                <input type="text" class="form-control" id="inputData">
+            </div>
+            <div class="col-9 mt-2">
+                <label for="inputUnidadeSaude" class="form-label">UNIDADE DE SAÚDE:</label>
+                <input type="text" class="form-control" id="inputUnidadeSaude">
+            </div>
+            <!-- Laboratório, lote e dose -->
+            <div class="col-3 mt-2">
+                <label for="inputLaboratorio" class="form-label">LABORATÓRIO:</label>
+                <input type="text" class="form-control" id="inputLaboratorio">
+            </div>
+            <div class="col-3 mt-2">
+                <label for="inputLote" class="form-label">LOTE:</label>
+                <input type="text" class="form-control" id="inputLote">
+            </div>
+
+            <div class="col-6 align-self-center text-center">
+                <h6>DOSE:</h6>
+                <div class="row justify-content-around">
+                    <div class="col">
+                        <div class="form-check mt-2">
+                            <input type="radio" class="form-check-input" name="dose" id="a" value="a">
+                            <label for="a" class="form-check-label">ÚNICA</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check mt-2">
+                            <input type="radio" class="form-check-input" name="dose" id="b" value="b">
+                            <label for="b" class="form-check-label">1ª</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check mt-2">
+                            <input type="radio" class="form-check-input" name="dose" id="c" value="c">
+                            <label for="c" class="form-check-label">2ª</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check mt-2">
+                            <input type="radio" class="form-check-input" name="dose" id="d" value="d">
+                            <label for="d" class="form-check-label">Reforço</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nome -->
+            <div class="col-12 mt-2">
+                <label for="inputNome" class="form-label">NOME:</label>
+                <input type="text" class="form-control" id="inputNome">
+            </div>
+            <!-- CPF e Telefone -->
+            <div class="col-6 mt-2">
+                <label for="inputCPF" class="form-label">CPF:</label>
+                <input type="text" class="form-control" id="inputCPF">
+            </div>
+            <div class="col-6 mt-2">
+                <label for="inputTelefone" class="form-label">TELEFONE:</label>
+                <input type="text" class="form-control" pattern="^\([1-9]{2}\)[0-9]{4}\-[0-9]{4}$" id="inputTelefone">
+            </div>
+            <!-- Data de nascimento, idade e sexo -->
+            <div class="col-5 mt-2">
+                <label for="inputDataNascimento" class="form-label">DATA DE NASCIMENTO:</label>
+                <input type="text" class="form-control" id="inputDataNAscimento">
+            </div>
+            <div class="col-2 mt-2">
+                <label for="inputIdade" class="form-label">IDADE:</label>
+                <input type="text" class="form-control" id="inputIdade">
+            </div>
+            <div class="col-5 mt-2">
+                <div class="row justify-content-center mr-auto">
+                    <label for="sexo" class="form-label">SEXO:</label>
+                </div>
+                <div class="row justify-content-center mr-auto">
+                    <select class="form-control text-center" name="sexo" id="sexo">
+                        <option selected>Selecione uma opção</option>
+                        <option value="1">Feminino</option>
+                        <option value="2">Masculino</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Endereço -->
+            <div class="col-12 mt-2">
+                <label for="inputEndereco" class="form-label">ENDEREÇO:</label>
+                <input type="text" class="form-control" id="inputEndereco">
+            </div>
+            <!-- Botão cadastrar -->
+            <div class="col-12 mt-3">
+                <div class="row justify-content-end m-auto">
+                    <input type="submit" class="btn btn-success" value="Cadastrar">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer class="conteiner" id="footer2">
+        <div class="d-flex justify-content-around py-2">
+            <div class="d-flex align-self-center mt-3">
+                <h6>Sistema de Gestão para Imunização contra COVID-19 &copy; 2021</h6>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
