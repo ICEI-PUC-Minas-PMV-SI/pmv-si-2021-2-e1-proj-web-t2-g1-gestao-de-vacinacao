@@ -1,0 +1,91 @@
+/* Definições globais*/
+
+@charset "utf-8";
+
+/* Fontes */
+
+*{
+    font-family: "Times New Roman", Times, serif, sans-serif;
+}
+
+/* Paleta de cores */
+
+.bg-primary-color{
+    background-color: #0152af;
+}
+
+.primary-color{
+    color: white;
+}
+
+.secondary-color{
+    color: #7a7a7a;
+}
+
+/* Body */
+
+body {
+    background-color: #cae4fa;  
+}
+ 
+/* Header*/
+
+#header{
+    height: 108px;
+}
+
+/* Navbar*/
+
+#navbar a:hover{
+    color: #a0abca;
+}
+
+#navbar a.active{
+    border-bottom: 1px solid white;
+}
+
+.navbar-brand{
+    display: flex;
+}
+
+.navbar-brand img{
+    width: 50px;
+}
+
+#navbar-items .navbar-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbar-items .nav-item{
+    margin: 0 3em;
+}
+
+/* Main */
+
+#main{
+    width: 100vw;
+    height: calc(100vh - 178px) !important; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Footer */
+
+#footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    height: 70px; 
+    background-color: #0152af;
+}
+ 
+h1{
+
+    color:rgb(10, 74, 134)
+}
