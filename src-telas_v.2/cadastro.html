@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGI COVID-19</title>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo (2).png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+        defer></script>
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <header class="container" id="header">
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+                <a href="#" class="navbar-brand primary-color">
+                    <img src="img/Logo.png" alt="SGI">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Filômetro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Vacinômetro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active primary-color" aria-current="page">Formulário
+                                Anamnese</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <div class="input-group">
+                                <input type="text" class="form-control secondary-color" id="username"
+                                    placeholder="Usuário" value="Usuário" readonly>
+                                <span class="input-group-text">
+                                    <a href="#" class="d-block link-primary text-decoration-none dropdown-toggle"
+                                        id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-person-circle"></i>
+                                    </a>
+                                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Sair</a></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" id="cadastro">
+        <h2 class="text-center">ANAMNESE VACINAÇÃO COVID-19</h2>
+        <form class="row g-2">
+            <!--  Vacinador -->
+            <div class="col-12 mt-2">
+                <label for="inputVacinador" class="form-label">VACINADOR:</label>
+                <input type="text" class="form-control" id="inputVacinador">
+            </div>
+            <!-- Data e Unidade de Saúde -->
+            <div class="col-3 mt-2">
+                <label for="inputData" class="form-label">DATA DE VACINAÇÃO:</label>
+                <input type="text" class="form-control" id="inputData">
+            </div>
+            <div class="col-lg-9 mt-2">
+                <label for="inputUnidadeSaude" class="form-label">UNIDADE DE SAÚDE:</label>
+                <input type="text" class="form-control" id="inputUnidadeSaude">
+            </div>
+            <!-- Laboratório, lote e dose -->
+            <div class="col-lg-3 col-md-3 mt-2">
+                <div class="row justify-content-center">
+                    <label for="sexo" class="form-label">LABORATÓRIO:</label>
+                </div>
+                <select class="form-select text-center" name="laboratorio" id="laboratorio">
+                    <option selected>Selecione uma opção</option>
+                    <option value="1">AstraZeneca</option>
+                    <option value="2">CoronaVac</option>
+                    <option value="3">Pfizer</option>
+                    <option value="4">Janssen</option>
+                </select>
+            </div>
+            <div class="col-lg-3 col-md-3 mt-2">
+                <label for="inputLote" class="form-label">LOTE:</label>
+                <input type="text" class="form-control" id="inputLote">
+            </div>
+            <div class="col-xg-6 col-lg-6 align-self-center text-center">
+                <h6>DOSE:</h6>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-check form-check-inline mt-2">
+                            <input type="radio" class="form-check-input" name="dose" id="a" value="a">
+                            <label for="a" class="form-check-label">ÚNICA</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check form-check-inline mt-2">
+                            <input type="radio" class="form-check-input" name="dose" id="b" value="b">
+                            <label for="b" class="form-check-label ">1ª</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check form-check-inline mt-2">
+                            <input type="radio" class="form-check-input" name="dose" id="c" value="c">
+                            <label for="c" class="form-check-label">2ª</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check form-check-inline mt-2">
+                            <input type="radio" class="form-check-input" name="dose" id="d" value="d">
+                            <label for="d" class="form-check-label">Reforço</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nome -->
+            <div class="col-12 mt-2">
+                <label for="inputNome" class="form-label">NOME:</label>
+                <input type="text" class="form-control" id="inputNome">
+            </div>
+            <!-- CPF -->
+            <div class="col-sm-4 col-lg-3 mt-2 align-self-end">
+                <label for="inputCPF" class="form-label">CPF:</label>
+                <input type="text" class="form-control" id="inputCPF">
+            </div>
+            <!-- Data de nascimento, idade e sexo -->
+            <div class="col-3 mt-2 align-self-end">
+                <label for="inputDataNascimento" class="form-label">DATA DE NASCIMENTO:</label>
+                <input type="text" class="form-control" id="inputDataNAscimento">
+            </div>
+            <div class="col-sm-3 mt-2 align-self-end">
+                <label for="inputIdade" class="form-label">IDADE:</label>
+                <input type="text" class="form-control" id="inputIdade">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-5 g-2 align-self-end">
+                <div class="row justify-content-center">
+                    <label for="sexo" class="form-label">SEXO:</label>
+                </div>
+                <div class="row justify-content-center g-0">
+                    <select class="form-select text-center" name="sexo" id="sexo">
+                        <option selected>Selecione uma opção</option>
+                        <option value="1">Feminino</option>
+                        <option value="2">Masculino</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Botão cadastrar -->
+            <div class="col-12 justify-content-end mt-3">
+                <div class="d-grid gap-2 d-flex justify-content-end">
+                    <input type="submit" class="btn btn-success" value="Cadastrar">
+                </div>
+        </form>
+
+        <!-- Modal Sobre o Projeto -->
+        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Sobre o projeto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>O Sistema de Gestão para Imunização contra Covid-19 foi desenvolvido com o objetivo de ajudar
+                            o Brasil na luta contra o Coronavírus. O SGI é uma plataforma gratuita e colaborativa, que
+                            tem o intuito de auxiliar os
+                            profissionais de saúde na gestão da campanha de imunização contra Covid-19, proporcionando
+                            melhor organização dos dados de vacinação, e ajudar a divulgar as informações sobre o
+                            processo de vacinação ao cidadão atuando como um canal
+                            comunicação entre a população e os postos de saúde.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Contatos -->
+        <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Contatos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Estamos à disposição para o suporte necessário.
+                            Para dúvidas, sugestões e reclamações, envie um e-mail para gente:
+                            feedback@sgi.covid19.com.br</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <h6>Sistema de Gestão para Imunização contra COVID-19 &copy; 2021</h6>
+        </div>
+    </footer>
+
+</body>
+
+</html>
