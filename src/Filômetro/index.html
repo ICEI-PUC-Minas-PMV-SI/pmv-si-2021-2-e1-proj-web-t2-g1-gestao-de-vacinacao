@@ -27,35 +27,47 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
-            <div class="container py-3">
-                <a href="#" class="navbar-brand primary-color">
-                    <img src="img/Logo.png" alt="SGI">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
-                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar-items">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active primary-color" aria-current="page">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Voltar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Logout</a>
-                        </li>
-                       
-                    </ul>
-                </div>
+  <header class="container" id="header">
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-3">
+            <a href="#" class="navbar-brand primary-color">
+                <img src="img/Logo.png" alt="SGI">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link active primary-color" aria-current="page">Filômetro</a>
+                </li>
+                  <li class="nav-item">
+                        <a href="#" class="nav-link primary-color" aria-current="page">Vacinômetro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link primary-color" aria-current="page">Formulário de Anamnese</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <div class="input-group">
+                            <input type="text" readonly class="form-control" placeholder="Usuário" aria-label="Username">
+                            <div class="dropdown">
+                                <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropdown"
+                                    data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                    <i class="bi bi-person-circle"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="dropdown">
+                                    <li><a href="#" class="dropdown-item">Perfil</a></li>
+                                    <li><a href="#" class="dropdown-item">Sair</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
     </header>
 
 <!-- Conteúdo -->
@@ -124,17 +136,10 @@
   </div>
 </form>
 
-<div class="card" style="width: 18rem;">
-    <div class="card-body">
-      <h5 class="card-title">Atenção!</h5>
-      <p class="card-text">Não se esqueça de checar se as informações estão corretas.</p>
-    </div>
-  </div>
 
-  <div class="botao">
-  <input type="button" value="Enviar">
-  </div>
-  
+
+  <button type="button" id="botao" class="btn btn-success">Confirmar</button>
+
   <!--Footer-->
 
   <footer class="conteiner">

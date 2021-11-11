@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="container" id="header">
         <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
             <div class="container py-3">
                 <a href="#" class="navbar-brand primary-color">
@@ -40,19 +40,28 @@
                 <div class="collapse navbar-collapse" id="navbar-items">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active primary-color" aria-current="page">Home</a>
+                            <a href="#" class="nav-link primary-color" aria-current="page">Filômetro</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Login</a>
+                        <a href="#" class="nav-link active primary-color" aria-current="page">Vacinômetro</a>
+                    </li>
+                      <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Formulário de Anamnese</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Ajuda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Contatos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Logout</a>
+            <li class="nav-item">
+                            <div class="input-group">
+                                <input type="text" readonly class="form-control" placeholder="Usuário" aria-label="Username">
+                                <div class="dropdown">
+                                    <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropdown"
+                                        data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                        <i class="bi bi-person-circle"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="dropdown">
+                                        <li><a href="#" class="dropdown-item">Perfil</a></li>
+                                        <li><a href="#" class="dropdown-item">Sair</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -124,7 +133,7 @@
         <div class="custom-control custom-checkbox mb-3">
         <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
         <label class="custom-control-label" for="customControlValidation1">Astrazeneca</label>
-        <div class="invalid-feedback">Marque uma(s) da(s) opcão(ões):</div>
+        <div class="invalid-feedback">Marque uma(s) da(s) opcão(ões)</div>
         </div>
     </form>
          
@@ -133,7 +142,7 @@
         <div class="custom-control custom-checkbox mb-3">
         <input type="checkbox" class="custom-control-input" id="customControlValidation2" required>
         <label class="custom-control-label" for="customControlValidation2">CoronaVac</label>
-        <div class="invalid-feedback">Marque uma(s) da(s) opcão(ões):</div>
+        <div class="invalid-feedback">Marque uma(s) da(s) opcão(ões)</div>
         </div>
     </form>
        
@@ -142,7 +151,7 @@
         <div class="custom-control custom-checkbox mb-3">
         <input type="checkbox" class="custom-control-input" id="customControlValidation3" required>
         <label class="custom-control-label" for="customControlValidation3">Pfizer</label>
-         <div class="invalid-feedback">Marque uma(s) da(s) opcão(ões):</div>
+         <div class="invalid-feedback">Marque uma(s) da(s) opcão(ões)</div>
         </div>
     </form>
  
@@ -165,18 +174,7 @@
         <label for="horns">Dose de Reforço</label>
       </div>
 
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Não se esqueça!</h5>
-          <p class="card-text">Sempre cheque com a prefeitura a faixa etária a ser vacinada.</p>
-        </div>
-        </div>
-
-
-
-        <div class="botao">
-        <input type="button" value="Enviar">
-        </div>
+      <button type="button" id="botao" class="btn btn-success">Enviar</button>
     </br></br></br></br>
 
           
