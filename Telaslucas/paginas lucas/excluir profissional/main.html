@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SGI COVID-19</title>
+    <title>Excluir Profissional</title>
     <meta charset="UTF-8">
 
     <!-- Favicon -->
@@ -39,21 +39,31 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-items">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                         <li class="nav-item">
-                            <a href="#" class="nav-link active primary-color" aria-current="page">Home</a>
+                            <a href="#" class="nav-link primary-color" aria-current="page">Gestão de Vacinas</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Login</a>
+                            <a href="#" class="nav-link primary-color" aria-current="page">Adicionar Profissional</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Ajuda</a>
+                            <a href="#" class="nav-link active primary-color" aria-current="page">Excluir Profissional</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Contatos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Sobre o Projeto</a>
-                        </li>
+                            <div class="input-group">
+                                <input type="text" readonly class="form-control" placeholder="Usuário"
+                                    aria-label="Username">
+                                <div class="dropdown">
+                                    <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropdown"
+                                        data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                        <i class="bi bi-person-circle"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="dropdown">
+                                        <li><a href="#" class="dropdown-item">Perfil</a></li>
+                                        <li><a href="#" class="dropdown-item">Sair</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                     </ul>
                 </div>
             </div>
@@ -62,16 +72,26 @@
 
     <h1>Desligamento Do Profissional de saúde</h1>
     <!-- Conteúdo -->
-    <div class="list-group" id=listgroup>
-        <a href="#" class="list-group-item list-group-item-action">Elizabet Lins Alcântara</a>
-        <a href="#" class="list-group-item list-group-item-action">Kristian Infante Camelo</a>
-        <a href="#" class="list-group-item list-group-item-action">Verónica Lampreia</a>
-        <a href="#" class="list-group-item list-group-item-action">Felix Medeiros</a>
-        <a href="#" class="list-group-item list-group-item-action">Rose Andrade Passos</a>
-    </div>
+   
+    <form class="was-validated"id=listgroup>
+        <div class="form-group">
+          <select class="custom-select" required>
+            <option></option>
+            <option>Elizabet Lins Alcântara</option>
+            <option>Kristian Infante Camelo</option> 
+            <option>Verónica Lampreia</option>
+            <option>Felix Medeiros</option>
+            <option>Rose Andrade Passos</option>
+          </div>
+        </select>
+          <div class="invalid-feedback">Agente não selecionado</div>
+        </div>
+      </form>
 
-    <div class="button" id=botao>
-        <button type="button" class="btn btn-primary btn-lg">Deletar</button>
+
+
+    <div class="button" id=botao class=bnt>
+        <button type="button" class="btn btn-danger">Deletar</button>
     </div>
 
 

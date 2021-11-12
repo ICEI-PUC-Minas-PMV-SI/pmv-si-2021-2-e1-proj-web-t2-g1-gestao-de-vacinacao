@@ -60,17 +60,17 @@ body {
 }
  h1 {
      position: absolute;
-     margin-top: 10%;
+     top: 20%;
      text-align:center ;
-     margin-left: 33%;
+     left: 34%;
  }
 
 
 
 #listgroup {
     position: absolute;
-    margin-left: 40%;
-    margin-top: 17%;
+    left: 40%;
+    top: 30%;
     width: 20%;
     background-color: #0152af;
    
@@ -79,8 +79,8 @@ body {
 
 #botao {
     position: absolute;
-    margin-left: 40%;
-    margin-top: 35%;
+    left: 40%;
+    top: 70%;
     
 }
 

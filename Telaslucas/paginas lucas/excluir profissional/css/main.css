@@ -60,27 +60,25 @@ body {
     height: 100%;
     margin: 0 auto;
 }
-
     h1 {
         position: absolute;
-        margin-top: 10%;
-        text-align:center ;
-        margin-left: 33%;
+        top: 20%;
+        text-align:center;
+        left: 31%;
     }
-    
-    
     #listgroup {
         position: absolute;
-        margin-left: 40%;
-        margin-top: 17%;
+        left: 40%;
+        top: 40%;
         width: 20%;
         color: #0152af;
         
     }   
     #botao {
         position: absolute;
-        margin-left: 40%;
-        margin-top: 35%;
+        left: 47%;
+        top: 70%;
+       
         
     }
 /* Footer */

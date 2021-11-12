@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SGI COVID-19</title>
+    <title>Gestão De Agentes</title>
     <meta charset="UTF-8">
 
     <!-- Favicon -->
@@ -40,20 +40,28 @@
                 <div class="collapse navbar-collapse" id="navbar-items">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active primary-color" aria-current="page">Home</a>
+                            <a href="#" class="nav-link primary-color" aria-current="page">Gestão de Vacinas</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Login</a>
+                            <a href="#" class="nav-link primary-color" aria-current="page">Adicionar Profissional</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Ajuda</a>
+                            <a href="#" class="nav-link primary-color" aria-current="page">Excluir Profissional</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Contatos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Sobre o Projeto</a>
-                        </li>
+                            <div class="input-group">
+                                <input type="text" readonly class="form-control" placeholder="Usuário" aria-label="Username">
+                                <div class="dropdown">
+                                    <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropdown"
+                                        data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                        <i class="bi bi-person-circle"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="dropdown">
+                                        <li><a href="#" class="dropdown-item">Perfil</a></li>
+                                        <li><a href="#" class="dropdown-item">Sair</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                     </ul>
                 </div>
             </div>
@@ -72,8 +80,8 @@
     </ul>
 
     <div class="button" id=botao>
-        <button type="button" class="btn btn-primary btn-lg">Adicionar</button>
-        <button type="button" class="btn btn-primary btn-lg">Deletar</button>
+        <button type="button" class="btn btn-success">Adicionar</button>
+        <button type="button" class="btn btn-danger">Deletar</button>
     </div>
     <footer class="conteiner">
         <div class="d-flex justify-content-around py-2" id="footer">
