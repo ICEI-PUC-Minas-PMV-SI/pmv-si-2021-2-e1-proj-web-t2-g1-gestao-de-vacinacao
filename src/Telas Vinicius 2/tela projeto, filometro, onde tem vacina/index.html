@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde tem Vacina </title>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo (2).png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"
+        defer></script>
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+        .figure-caption {
+            color: rgb(167, 162, 162);
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+h1{
+    font-size: 437%;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+h2{
+    font-size: 130%;
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+td{
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(10,74,134)
+}
+
+strong{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00d824;
+    font-size: 150%;
+}
+
+code{
+    color: #0152af;
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li{
+    font-size: 105%;
+}
+
+b{
+    font-size: 107%;
+}
+
+.figure-caption{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#indisponibilidade strong{
+    color:red
+}
+
+.acordion-body h4{
+    color: red;
+}
+
+#corona strong{
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+.accordion-body{
+background-color:rgb(234, 239, 241)
+}
+
+.accordion-button{
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+    </style>
+
+</head>
+
+<body>
+    <header class="container" id="header">
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+                <a href="#" class="navbar-brand primary-color">
+                    <img src="img/logo.png" alt="SGI">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active primary-color" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Ajuda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Contatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Sobre o Projeto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" id="main">
+
+        <h1>Onde Tem Vacina ?</h1>
+        <figure class="figure">
+            <img src="img\vacina.png" class="figure-img img-fluid rounded" height="200" width="200">
+            <figcaption class="figure-caption"><b>Consulte a baixo sua Região e postos de vacinação
+                    disponveis</b>
+            </figcaption>
+        </figure>
+
+        <div class="accordion-item" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <b>Vianópolis</b>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <h2>Região Vianópolis</h2>
+                        <h3><b>UBS Vianópolis</b></h3>
+                        <p>
+                            <li><b>Endereço:</b> R. Ari Barbosa da Silva, 145 - Vianópolis, Betim - MG,
+                                32628-162
+                            </li>
+                            <li><b>Horario de Funcionamento:</b> SEG a SEX 07:00-17:00</li>
+                            <li><b>Telefone:</b> (31) 3594-6434</li>
+                        </p>
+                    <div id="Disponibilidade">
+                        <code>DISPONIBILIDADE 2 DOSE:</code>
+                        <li><b>ASTRAZENECA:</b><strong> SIM</strong></li>
+                        <li><b>PFIZER:</b><strong> SIM</strong></li>
+                        <div id="corona">
+                            <li><b>CORONA VAC:</b><strong> NÂO</strong></li>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    <b>Terezópolis</b>
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <h2>Região Terezópolis</h2>
+                    <h3><b>UBS Cristovina C.G.Souza</b></h3>
+                    <p>
+                        <li><b>Endereço:</b> Rua Guarana, 200, R. Terezopolis, MG, 32680-110
+                        </li>
+                        <li><b>Horario de Funcionamento:</b> SEG a SEX 07:00-18:00</li>
+                        <li><b>Telefone:</b> (31) 3591-4080</li>
+                    </p>
+                
+                <div id="Disponibilidade">
+                    <code>DISPONIBILIDADE 2 DOSE:</code>
+                    <li><b>ASTRAZENECA:</b><strong> SIM</strong></li>
+                    <li><b>PFIZER:</b><strong> SIM</strong></li>
+                    <li><b>CORONA VAC:</b><strong> SIM</strong></li>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        <b>Alterosas</b>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <h2>Região Alterosas</h2>
+                        <h3><b>UBS Alterosas I</b></h3>
+                        <h4><b>POSTO DESATIVADO</b></h4>
+                        <h5>(Em caso de duvidas ligue para (31) 3512-3000)</h5>
+                        <p>
+                            <li><b>Endereço:</b> Av. das Acácias, S/N - Jardim Brasilia, Betim - MG, 32600-001
+                            </li>
+                            <li><b>Horario de Funcionamento:</b> SEG a SEX 07:00-17:00</li>
+                            <li><b>Telefone:</b> (31) 3595-4309</li>
+                        </p>
+                    
+                    <div id="indisponibilidade">
+                        <code>DISPONIBILIDADE 2 DOSE:</code>
+                        <li><b>ASTRAZENECA:</b><strong> NÂO</strong></li>
+                        <li><b>PFIZER:</b><strong> NÂO</strong></li>
+                        <li><b>CORONA VAC:</b><strong> NÂO</strong></li>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapsefour">
+                        <b>Norte</b>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingfour">
+                    <div class="accordion-body">
+                        <h2>Região Norte</h2>
+                        <h3><b>UBS Angola</b></h3>
+                        <p>
+                            <li><b>Endereço:</b> R. Arlíndo José dos Santos, 160 - Novo Horizonte, Betim -
+                                MG, 32606-006
+                            </li>
+                            <li><b>Horario de Funcionamento:</b> SEG a SEX 07:00-17:00</li>
+                            <li><b>Telefone:</b> (31) 3595-8861</li>
+                        </p>
+                    
+                    <div id="Disponibilidade">
+                        <code>DISPONIBILIDADE 2 DOSE:</code>
+                        <li><b>ASTRAZENECA:</b><strong> SIM</strong></li>
+                        <div id="corona">
+                            <li><b>PFIZER:</b><strong> NÂO</strong></li>
+                        </div>
+                    </div>
+                    <li><b>CORONA VAC:</b><strong> SIM</strong></li>
+                </div>
+                </div>
+            </div>
+
+            </section>
+        </div>
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <h6>Sistema de Gestão para Imunização contra COVID-19 &copy; 2021</h6>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -86,48 +86,18 @@ body {
 }
  
 h1{
-font-size: 437%;
-font-family: 'Times New Roman', Times, serif;
-    color:rgb(0, 0, 0)
+    font-display: swap ;
+    font-size: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h2{
-    font-size: 130%;
-}
+font-size: 40px;
 
-h3{
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-    color:rgb(0, 0, 0)
-}
-
-td{
-    font-size: xx-large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color:rgb(10, 74, 134)
 }
 
-strong{
-
-   color: #00d824;
-    font-size: 150%;
-}
-
-code{
-    color: red;
-    font-size: 150%;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-li{
-    font-size: 105%;
-}
-
-b{
-    font-size: 107%;
-}
-
-.figure-caption{
+h3{
     
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #0152af;
 }

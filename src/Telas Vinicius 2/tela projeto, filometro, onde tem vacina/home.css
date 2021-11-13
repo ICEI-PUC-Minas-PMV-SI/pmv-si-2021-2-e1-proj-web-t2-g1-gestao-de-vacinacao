@@ -22,22 +22,35 @@
     color: #7a7a7a;
 }
 
+/* HTML */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 /* Body */
 
 body {
+    margin-top: 118px;
+    margin-bottom: 80px;
     background-color: #cae4fa;  
 }
  
 /* Header*/
 
-#header{
-    height: 108px;
-}
-
 /* Navbar*/
 
 #navbar a:hover{
     color: #a0abca;
+}
+
+.btn-nav{
+    text-decoration: none;
+}
+
+.btn-nav:hover{
+    color: #a0abca;  
 }
 
 #navbar a.active{
@@ -62,30 +75,66 @@ body {
     margin: 0 3em;
 }
 
-/* Main */
+.margem-esq{
+    margin-left: 13px;
+}
+
+
+
+/* Tela Home */
 
 #main{
     width: 100vw;
-    height: calc(100vh - 178px) !important; 
-    display: flex;
+    height: calc(100vh-198px);
+    display: block;
     flex-direction: column;
     text-align: center;
     justify-content: center;
 }
 
+
+/* Tela Cadastro */
+
+
+
+/* Tela Ajuda */
+
+#accordion{
+    width: 100%;
+}
+
+
+
+
+
+/* Modal */
+
+.modal-body{
+    text-align: justify;
+}
+
 /* Footer */
 
-#footer{
+.footer {
     position: absolute;
-    left: 0;
     bottom: 0;
-    color: white;
     width: 100%;
-    height: 70px; 
+    height: 70px;
     background-color: #0152af;
+    color: white;
 }
- 
-h1{
 
-    color:rgb(10, 74, 134)
+.footer > .container {
+    margin-top: 24px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
+@media (max-width: 415px){
+    .footer > .container {
+        margin-top: 17px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
