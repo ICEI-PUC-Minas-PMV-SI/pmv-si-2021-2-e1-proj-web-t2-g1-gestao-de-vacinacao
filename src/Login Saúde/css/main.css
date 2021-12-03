@@ -70,27 +70,27 @@ margin-left: 570px;
 
 #botao{
     margin: 0 auto;
-    width: 25%; 
+    width: 10%; 
     font-size: 15px;
-    margin-top: 70px;
-    margin-left: 350px;
+    margin-top: 350px;
+    margin-left: 630px;
    
 }
  
-.form-group{
+#form-2{
     margin: 0 auto;
     width: 50%; 
     font-size: 20px;
     margin-top: 70px;
-    margin-left: 270px;
+    margin-left: 175px;
 }
 
-#form-2{
+#form-cadastro{
     margin: 0 auto;
-    width: 139%; 
+    width: 50%; 
     font-size: 20px;
-    margin-top: 70px;
-    margin-left: 130px;
+    margin-top: 20px;
+    margin-left: 350px;
     height: 60px;
 }
 
@@ -103,8 +103,9 @@ margin-left: 570px;
         width: 100%;
         height: 70px; 
         background-color: #0152af;
-        margin-left: -270px;
+        margin-left: -1px;
       }
+
 
 
 
