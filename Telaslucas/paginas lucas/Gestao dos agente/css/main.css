@@ -50,8 +50,6 @@
     margin: 0 3em;
 }
 
-
-
 /* Body */
 
 body {
@@ -60,27 +58,33 @@ body {
     height: 100%;
     margin: 0 auto;
 }
-    h1 {
-        position: absolute;
-        top: 20%;
-        text-align:center;
-        left: 31%;
-    }
-    #listgroup {
-        position: absolute;
-        left: 40%;
-        top: 40%;
-        width: 20%;
-        color: #0152af;
-        
-    }   
-    #botao {
-        position: absolute;
-        left: 47%;
-        top: 70%;
-       
-        
-    }
+ h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+ }
+
+#tabela{
+    background-color: white;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+    
+    
+ }
+ 
+ #tabela {
+   height: 350px;
+   overflow-y: scroll;
+ }
+
+
+
 /* Footer */
 
 #footer{
@@ -91,4 +95,4 @@ body {
     height: 70px; 
     background-color: #0152af;
 }
- 
+

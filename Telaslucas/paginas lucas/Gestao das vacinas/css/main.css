@@ -10,6 +10,7 @@
 
 /* Paleta de cores */
 
+
 .bg-primary-color{
     background-color: #0152af;
 }
@@ -59,30 +60,22 @@ body {
     margin: 0 auto;
 }
  h1 {
-     position: absolute;
-     top: 20%;
-     text-align:center ;
-     left: 34%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+ 
+#tabela{
+    background-color: #ffffff;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
  }
 
-
-
-#listgroup {
-    position: absolute;
-    left: 40%;
-    top: 30%;
-    width: 20%;
-    background-color: #0152af;
-   
-    
-}
-
-#botao {
-    position: absolute;
-    left: 40%;
-    top: 70%;
-    
-}
 
 
 /* Footer */

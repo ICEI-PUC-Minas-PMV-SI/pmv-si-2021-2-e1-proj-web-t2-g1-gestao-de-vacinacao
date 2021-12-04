@@ -1,0 +1,20 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "AstraZeneca",
+      "quantidade" : "8"
+      
+    },
+    {
+      "id": "2",
+      "nome": "CoronaVac",
+      "quantidade" : "3"
+    },
+    {
+      "id": "3",
+      "nome": "Pfizer",
+      "quantidade" : "30"
+    }
+  ]
+}

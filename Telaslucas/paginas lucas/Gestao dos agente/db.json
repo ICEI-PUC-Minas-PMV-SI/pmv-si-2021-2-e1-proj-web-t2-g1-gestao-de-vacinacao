@@ -1,0 +1,20 @@
+{
+  "produtos": [
+    {
+      "id": "2",
+      "nome": "Kristian Infante Camelo"
+    },
+    {
+      "id": "4",
+      "nome": "Felix Medeiros"
+    },
+    {
+      "id": "5",
+      "nome": "Rose Andrade Passos"
+    },
+    {
+      "id": "1",
+      "nome": "Verónica Lampreia"
+    }
+  ]
+}

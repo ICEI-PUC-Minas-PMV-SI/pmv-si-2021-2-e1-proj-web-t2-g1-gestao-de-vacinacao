@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão De Vacinas</title>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo (2).png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: #cae4fa;">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+                <a href="#" class="navbar-brand primary-color">
+                    <img src="img/Logo.png" alt="SGI">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active primary-color" aria-current="page">Gestão de Vacinas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="file:///C:/Users/PICHAU/Desktop/paginas%20lucas/Gestao%20dos%20agente/main.html" class="nav-link primary-color" aria-current="page">Gestão de Agentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="input-group">
+                                <input type="text" readonly class="form-control" placeholder="Administrador"
+                                    aria-label="Username">
+                                <div class="dropdown">
+                                    <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropdown"
+                                        data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                        <i class="bi bi-person-circle"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="dropdown">
+                                        <li><a href="#" class="dropdown-item">Perfil</a></li>
+                                        <li><a href="#" class="dropdown-item">Sair</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <h1>Gestão De Vacinas</h1>
+
+    <!-- Conteúdo -->
+
+    <div class="container" id=tabela>
+        <br />
+        <h2>
+            Gestão das Vacinas
+            <a onclick="getProduto(0)" class="btn btn-success btn-sm" style="float:right" data-toggle="modal"
+                data-target="#produto-modal">
+                <i class="fa fa-plus"></i> Adicionar
+            </a>
+        </h2>
+        <hr />
+        <div class="row">
+            <div class="col-12">
+                <table class="table" style="border: 0px;">
+                    <thead>
+                        <tr>
+                            <th width=5%>#</th>
+                            <th width=30%>Vacinas</th>
+                            <th width=20%>Quantidade</th>
+                            <th width=50%>Adicionar ou modificar</th>
+                        </tr>
+                    </thead>
+                    <tbody id='produto-list'>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--
+            Modal apresentada para solicitar confirmação do usuário quanto à remoção dos dados
+        -->
+    <div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmação de remoção</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Você realmente deseja remover o produto <span id="id-prod"></span>?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+                    <button type="button" class="btn btn-primary" id="btn-delete">Sim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Modal apresentada para solicitar os dados para preenchimento do formulário -->
+
+    <div class="modal fade" id="produto-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Produto <span id="edit-prod-id"></span></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="produto-form" method="post" action="">
+                        <div class="form-group">
+                            <label for="produto-id" class="col-form-label">Código:</label>
+                            <input type="number" class="form-control" id="produto-id" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="produto-nome" class="col-form-label">Nome:</label>
+                            <input type="text" class="form-control" id="produto-nome" required>
+                        </div>
+                        <div class="was-validated">Posto a Adicionar
+                            <div class="form-group" id=drop>
+                                <select class="custom-select" required>
+                                    <option></option>
+                                    <option>ALCIDES BRAZ</option>
+                                    <option>BRAZ</option>
+                                    <option>ANTÔNIO JOSÉ SALOMÃO –ALTEROSAS</option>
+                                    <option>ANTÔNIO SABINO DE SOUZA – IMBIRUÇU</option>
+                                    <option> ANTÔNIO CAETANO – LARANJEIRAS</option>
+                                    <option> ANTONIO BERNARDES – PARQUE DO CEDRO</option>
+                                    <option>CRISTOVINA C. G. SOUZA – BEMGE</option>
+                                    <option> CRUZEIRO DO SUL</option>
+                                    <option>CAIC</option>
+                                    <option> CAMPOS ELÍSEOS</option>
+                                    <option> DR. ROGÉRIO GUSTAVO REZENDE – ANGOLA</option>
+                                    <option>CITROLÂNDIA</option>
+                                    <option> DOM BOSCO</option>
+                                    <option>DUQUE DE CAXIAS</option>
+                                    <option>DR. MANOEL JUVÊNCIO – CIDADE VERDE</option>
+                                    <option>EDUARDO A. ROCHA – PETROVALE</option>
+                                    <option> GENI ROSA DOS SANTOS – VILA RECREIO</option>
+                                    <option>GENI ROSA DOS SANTOS – VILA RECREIO</option>
+                                    <option>GERALDINA AUGUSTA BRAGA – PTB</option>
+                                    <option>GERALDINA AUGUSTA BRAGA – PTB</option>
+                                    <option>HOMERO GIL</option>
+                                    <option>JOÃO GREGÓRIO FERREIRA – ALVORADA</option>
+                                    <option> JOÃO NARCISO DE BARROS – UNIVERSAL</option>
+                                    <option>MARIA OLIVEIRA SILVA – BUENO FRANCO</option>
+                                    <option> MARIMBÁ</option>
+                                    <option>MARLY ROSA DA SILVA TOMÉ – COLÔNIA SANTA ISABEL</option>
+                                    <option>NEUSA MARIA BARBIZAN FERREIRA – TRINCHEIRA NOSSA SENHORA DE FÁTIMA</option>
+                                    <option>NOVO AMAZONAS</option>
+                                    <option>OSVALDO CRUZ – VIANÓPOLIS</option>
+                                    <option>PAULO CAMILO</option>
+                                    <option>REGINALDO SILVA – ICAIVERA</option>
+                                    <option>ROSA CAPUCHE – JARDIM PETRÓPOLIS</option>
+                                    <option> ROSA MIGUEL SALOMÃO – BANDEIRINHAS</option>
+                                    <option>SONIA AUGUSTA DOS SANTOS SILVA – TERESÓPOLIS</option>
+                                    <option>VILA CRISTINA</option>
+                                    <option>VIRGÍNIA MARIA DE CARVALHO – NOVA BADEN</option>
+                                    <option> WALDEMAR GOMES DE OLIVEIRA – GUANABARA</option>
+                                    <option>WILSON OLIVEIRA ANTUNES – CACHOEIRA</option>
+                            </div>
+                            </select>
+                            <div class="invalid-feedback">Localidade Não Informada</div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <footer class="conteiner">
+        <div class="d-flex justify-content-around py-2" id="footer">
+            <div class="d-flex align-self-center ml-3">
+                <h6>Sistema de Gestão para Imunização contra COVID-19 &copy; 2021</h6>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
