@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão De Agentes</title>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo (2).png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+                <a href="#" class="navbar-brand primary-color">
+                    <img src="img/Logo.png" alt="SGI">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Gestão de Vacinas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Adicionar Profissional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Excluir Profissional</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="input-group">
+                                <input type="text" readonly class="form-control" placeholder="Usuário" aria-label="Username">
+                                <div class="dropdown">
+                                    <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="dropdown"
+                                        data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                        <i class="bi bi-person-circle"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end mt-1" aria-labelledby="dropdown">
+                                        <li><a href="#" class="dropdown-item">Perfil</a></li>
+                                        <li><a href="#" class="dropdown-item">Sair</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <h1>Gestão Do Profissional de saúde</h1>
+
+    <!-- Conteúdo -->
+    <ul class="list-group" id=listgroup>
+        <li class="list-group-item">Elizabet Lins Alcântara</li>
+        <li class="list-group-item">Kristian Infante Camelo</li>
+        <li class="list-group-item">Verónica Lampreia</li>
+        <li class="list-group-item">Felix Medeiros </li>
+        <li class="list-group-item">Rose Andrade Passos</li>
+    </ul>
+
+    <div class="button" id=botao>
+        <button type="button" class="btn btn-success">Adicionar</button>
+        <button type="button" class="btn btn-danger">Deletar</button>
+    </div>
+    <footer class="conteiner">
+        <div class="d-flex justify-content-around py-2" id="footer">
+            <div class="d-flex align-self-center ml-3">
+                <h6>Sistema de Gestão para Imunização contra COVID-19 &copy; 2021</h6>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
