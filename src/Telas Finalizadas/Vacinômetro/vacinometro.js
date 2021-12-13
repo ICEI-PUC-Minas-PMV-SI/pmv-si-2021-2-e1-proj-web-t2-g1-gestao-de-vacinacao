@@ -5,8 +5,10 @@ var db_inicial = {
           "vacinador": "João de Souza",
           "unidade": "UBS Universal",
           "data": "2021-12-02",
-          "lotacao": "Lotação Máxima",
+          "laboratorio": "Astrazeneca",
+          "dose": "Dose Única",
           }
+      
     ]
   }
 
@@ -29,8 +31,9 @@ function Cadastrar(dadosSGI) {
       "vacinador": dadosSGI.vacinador,
       "unidade": dadosSGI.unidade,
       "data": dadosSGI.data,
-      "lotacao": dadosSGI.lotacao,
-      };
+      "laboratorio": dadosSGI.laboratorio,
+      "dose": dadosSGI.dose,
+    };
 
   // Insere o novo objeto no array
   db.data.push(novoSGI);
@@ -48,7 +51,8 @@ function Alterar(id, dadosSGI) {
   db.data[index].vacinador = dadosSGI.vacinador,
   db.data[index].unidade = dadosSGI.unidade,
   db.data[index].data = dadosSGI.data,
-  db.data[index].lotacao = dadosSGI.lotacao,
+  db.data[index].laboratorio = dadosSGI.laboratorio,
+  db.data[index].dose = dadosSGI.dose,
   
 
   displayMessage("Alteração realizada com sucesso");
@@ -66,3 +70,4 @@ function Excluir(id) {
   // Atualiza os dados no Local Storage
   localStorage.setItem('db_sgi', JSON.stringify(db));
 }
+

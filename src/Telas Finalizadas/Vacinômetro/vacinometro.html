@@ -49,7 +49,8 @@
         defer></script>
 
     <!-- CSS do projeto  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/vacinometro.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body onload="init()">
@@ -66,10 +67,11 @@
                 <div class="collapse navbar-collapse" id="navbar-items">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active primary-color" aria-current="page">Filômetro</a>
+                            <a href="filometro.html
+                        " class="nav-link primary-color" aria-current="page">Filômetro</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link primary-color" aria-current="page">Vacinômetro</a>
+                            <a href="vacinometro.html" class="nav-link active primary-color" aria-current="page">Vacinômetro</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link  primary-color" aria-current="page">Formulário
@@ -110,7 +112,7 @@
     </section>
 
     <main class="container" id="cadastro">
-        <h2 class="text-center">FILÔMETRO</h2>
+        <h2 class="text-center">VACINÔMETRO</h2>
         <form class="row g-2 was-validated" id="form-cadastro">
             <!-- ID -->
             <div class="col-1 mt-2">
@@ -126,54 +128,71 @@
                 <label for="inputUnidadeSaude" class="form-label">UNIDADE DE SAÚDE:</label>
                 <input type="text" class="form-control" id="inputUnidadeSaude" name="UnidadeSaude" disabled>
             </div>
-            <!-- Data  -->
+            <!-- Data e Unidade de Saúde -->
             <div class="col-3 mt-2">
                 <label for="inputData" class="form-label">DATA DE VACINAÇÃO:</label>
                 <input type="date" class="form-control" id="inputData" name="inputData" required>
             </div>
-            <!-- Lotação-->
+            <!-- Laboratório, lote e dose -->
             <div class="col-lg-3 col-md-3 mt-2">
                 <div class="row justify-content-center">
-                    <label for="sexo" class="form-label">LOTAÇÃO:</label>
+                    <label for="sexo" class="form-label">LABORATÓRIO:</label>
                 </div>
-                <select class="form-select text-center" name="lotacao" id="inputLotacao" required>
+                <select class="form-select text-center" name="laboratorio" id="inputLaboratorio" required>
                     <option selected></option>
-                    <option value="Lotação Mínima">Lotação Mínima</option>
-                    <option value="Lotação Média">Lotação Média</option>
-                    <option value="Lotação Máxima">Lotação Máxima</option>
-                   </select>
+                    <option value="Astrazeneca">AstraZeneca</option>
+                    <option value="CoronaVac">CoronaVac</option>
+                    <option value="Pfizer">Pfizer</option>
+                    <option value="Janssen">Janssen</option>
+                </select>
             </div>
+           
+            <div class="col-lg-3 col-md-3 mt-2">
+                <div class="row justify-content-center">
+                    <label for="sexo" class="form-label">DOSES:</label>
+                </div>
+                <select class="form-select text-center" name="dose" id="inputDose" required>
+                    <option selected></option>
+                    <option value="Primeira Dose">Primeira Dose</option>
+                    <option value="Segunda Dose">Segunda Dose</option>
+                    <option value="Dose de Reforço">Dose de Reforço</option>
+                    <option value="Dose Única">Dose Única</option>
+                </select>
             </div>
-
-            <!-- Botões -->
+          </div>
+         
+         <!-- Botões -->
             <div class="col-12 justify-content-end mt-3">
                 <div class="d-grid gap-2 d-flex justify-content-end">
                     <input type="submit" class="btn btn-success" id="btnCadastra" value="Cadastrar">
                     <input type="button" class="btn btn-warning" id="btnEdita" value="Editar">
-                    <input type="button" class="btn btn-danger" id="btnExclui" value="Excluir">
-                    <input type="button" class="btn btn-secondary" id="btnLimpa" value="Limpar">
+                  <input type="button" class="btn btn-secondary" id="btnLimpa" value="Limpar">
                 </div>
         </form>
     </main>
 
-    <section class="container info" id="info">
+    <section class="container table-light table-hover" id="info">
         <div>
-            <h4>Alterações feitas: <span id="vacinados"></span></h4>
+            <h4 class="text-center">Alterações feitas: <span id="vacinados"></span></h4>
         </div>
-        <table id="grid_tabela" class="table table-striped">
+        <div class="table-responsive">
+        <table id="grid_tabela" class="table">
             <thead>
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Data</th>
-                    <th scope="col">Lotação</th>
-                   </tr>
+                    <th scope="col">Laboratório</th>
+                    <th scope="col">Doses Disponíveis</th>
+                    </tr>
             </thead>
             <tbody id="tabela-dados">
-                <td scope="row">1</td>
-                <td></td>
-                <td></td>
-                </tbody>
+                    <td scope="row">1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tbody>
         </table>
+        </div>
     </section>
 
     <footer class="footer">
@@ -221,7 +240,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="app.js"></script>
+    <script src="vacinometro.js"></script>
     <script>
         function exibir() {
             // Remove todas as linhas do corpo da tabela
@@ -236,7 +255,8 @@
 
                 $("#tabela-dados").append(`<tr><td scope="row">${dado.id}</td>
                                                 <td>${novaData}</td>
-                                                <td>${dado.lotacao}</td>
+                                                <td>${dado.laboratorio}</td>
+                                                <td>${dado.dose}</td>
                                                 </tr>`);
 
             }
@@ -264,12 +284,14 @@
                 let campoVacinador = $("#inputVacinador").val();
                 let campoUnidade = $("#inputUnidadeSaude").val();
                 let campoData = $("#inputData").val();
-                let campoLotacao = $("#inputLotacao").val();
+                let campoLaboratorio = $("#inputLaboratorio").val();
+                let campoDose = $("#inputDose").val();
                 let dadosSGI = {
                     vacinador: campoVacinador,
                     unidade: campoUnidade,
                     data: campoData,
-                    lotacao: campoLotacao,
+                    laboratorio: campoLaboratorio,
+                    dose: campoDose,
                     };
 
                 let campoId = $("#inputId").val();
@@ -297,13 +319,15 @@
                 let campoVacinador = $("#inputVacinador").val();
                 let campoUnidade = $("#inputUnidadeSaude").val();
                 let campoData = $("#inputData").val();
-                let campoLotacao = $("#inputLotacao").val();
+                let campoLaboratorio = $("#inputLaboratorio").val();
+                let campoDose = $("#inputDose").val();
                 let dadosSGI = {
                     vacinador: campoVacinador,
                     unidade: campoUnidade,
                     data: campoData,
-                    lotacao: campoLotacao,
-                   };
+                    laboratorio: campoLaboratorio,
+                    dose: campoDose,
+                    };
 
                 Alterar(parseInt(campoId), dadosSGI);
 
@@ -363,7 +387,8 @@
                 $("#inputVacinador").val(dadoSelecionado.vacinador);
                 $("#inputUnidadeSaude").val(dadoSelecionado.unidade);
                 $("#inputData").val(dadoSelecionado.data);
-                $("#inputLotacao").val(dadoSelecionado.lotacao);
+                $("#inputLaboratorio").val(dadoSelecionado.laboratorio);
+                $("#inputDose").val(dadoSelecionado.dose);
                 });
 
             exibir();

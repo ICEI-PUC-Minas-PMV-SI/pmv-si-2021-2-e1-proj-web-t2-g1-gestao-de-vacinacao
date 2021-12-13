@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JS para dados do Usuário logado  -->
+    <script src="login.js"></script>
+    <script>
+        if (!usuarioCorrente.login) {
+            window.location.href = LOGIN_URL;
+        }
+
+        function initPage() {
+            document.getElementById('btn_logout').addEventListener('click', logoutUser);
+
+            document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.login;
+            document.getElementById('nomeUsuarioPerfil').innerHTML = usuarioCorrente.nome;
+            document.getElementById('nomeUnidadePerfil').innerHTML = usuarioCorrente.unidade;
+
+            document.getElementById('inputVacinador').value = usuarioCorrente.nome;
+            document.getElementById('inputUnidadeSaude').value = usuarioCorrente.unidade;
+        }
+        window.addEventListener('load', initPage);
+    </script>
+
+    <title>SGI COVID-19</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo (2).png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"
+        defer></script>
+
+    <!-- CSS do projeto  -->
+    <link rel="stylesheet" href="css/filometro.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body onload="init()">
+    <header class="container" id="header">
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+                <a href="#" class="navbar-brand primary-color">
+                    <img src="img/Logo.png" alt="SGI">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="filometro.html" class="nav-link active primary-color" aria-current="page">Filômetro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="vacinometro.html" class="nav-link  primary-color" aria-current="page">Vacinômetro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cadastro.html" class="nav-link  primary-color" aria-current="page">Formulário
+                                Anamnese</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <div class="input-group">
+                                <span class="form-control secondary-color" id="nomeUsuario"></span>
+                                <span class="input-group-text">
+                                    <a href="#" class="d-block link-primary text-decoration-none dropdown-toggle"
+                                        id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-person-circle"></i>
+                                    </a>
+                                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                                        <li><button type="button" class="dropdown-item" data-toggle="modal"
+                                                data-target="#perfilModal">Perfil</button></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" id="btn_logout">Sair</a></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container center">
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+                <!--<div class="alert alert-warning">Contato não encontrado.</div>-->
+            </div>
+        </div>
+    </section>
+
+    <main class="container" id="cadastro">
+        <h2 class="text-center">FILÔMETRO</h2>
+        <form class="row g-2 was-validated" id="form-cadastro">
+            <!-- ID -->
+            <div class="col-1 mt-2">
+                <label for="inputId" class="form-label">ID:</label>
+                <input type="text" class="form-control" id="inputId" disabled>
+            </div>
+            <!--  Vacinador -->
+            <div class="col-7 mt-2">
+                <label for="inputVacinador" class="form-label">VACINADOR:</label>
+                <input type="text" class="form-control" id="inputVacinador" name="vacinador" disabled>
+            </div>
+            <div class="col-lg-4 mt-2">
+                <label for="inputUnidadeSaude" class="form-label">UNIDADE DE SAÚDE:</label>
+                <input type="text" class="form-control" id="inputUnidadeSaude" name="UnidadeSaude" disabled>
+            </div>
+            <!-- Data  -->
+            <div class="col-3 mt-2">
+                <label for="inputData" class="form-label">DATA DE VACINAÇÃO:</label>
+                <input type="date" class="form-control" id="inputData" name="inputData" required>
+            </div>
+            <!-- Hora -->
+            <div class="col-3 mt-2">
+                <label for="inputTime" class="form-label">Hora:</label>
+                <input type="time" class="form-control" id="inputTime" name="inputTime" required>
+            </div>
+            <!-- Lotação -->
+            <div class="col-lg-3 col-md-3 mt-2">
+                <div class="row justify-content-center">
+                    <label for="lotacao" class="form-label">LOTAÇÃO:</label>
+                </div>
+                <select class="form-select text-center" name="lotacao" id="inputLotacao" required>
+                    <option selected></option>
+                    <option value="Lotação Mínima">Lotação Mínima</option>
+                    <option value="Lotação Média">Lotação Média</option>
+                    <option value="Lotação Máxima">Lotação Máxima</option>
+                    </select>
+            </div>
+           </div>
+         
+         <!-- Botões -->
+            <div class="col-12 justify-content-end mt-3">
+                <div class="d-grid gap-2 d-flex justify-content-end">
+                    <input type="submit" class="btn btn-success" id="btnCadastra" value="Cadastrar">
+                    <input type="button" class="btn btn-warning" id="btnEdita" value="Editar">
+                    <input type="button" class="btn btn-secondary" id="btnLimpa" value="Limpar">
+                </div>
+        </form>
+    </main>
+
+    <section class="container table-light table-hover" id="info">
+        <div>
+            <h4 class="text-center">Alterações feitas: <span id="vacinados"></span></h4>
+        </div>
+        <div class="table-responsive">
+        <table id="grid_tabela" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Hora</th>
+                    <th scope="col">Lotação</th>
+                    </tr>
+            </thead>
+            <tbody id="tabela-dados">
+                    <td scope="row">1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    </tbody>
+        </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <h6>Sistema de Gestão para Imunização contra COVID-19 &copy; 2021</h6>
+        </div>
+    </footer>
+
+    <!-- Modal Perfil do Usuário -->
+    <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dados do Usuário</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="perfil-box" class="col-md-12">
+                        <form id="login-form" class="form">
+                            <div class="form-group">
+                                <label class="form-label">Usuário:</label>
+                                <span id="nomeUsuarioPerfil"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Unidade:</label>
+                                <span id="nomeUnidadePerfil"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fechar</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="filometro.js"></script>
+    <script>
+        function exibir() {
+            // Remove todas as linhas do corpo da tabela
+            $("#tabela-dados").html("");
+
+            // Popula a tabela com os registros do banco de dados
+            for (i = 0; i < db.data.length; i++) {
+                let dado = db.data[i];
+
+                let arrayData = dado.data.split('-');
+                let novaData = arrayData[2] + '-' + arrayData[1] + '-' + arrayData[0];
+
+                $("#tabela-dados").append(`<tr><td scope="row">${dado.id}</td>
+                                                <td>${novaData}</td>
+                                                <td>${dado.time}</td>
+                                                <td>${dado.lotacao}</td>
+                                                </tr>`);
+
+            }
+
+            document.getElementById('vacinados').innerHTML = db.data.length;
+        }
+
+        function init() {
+            $('#msg').bind("DOMSubtreeModified", function () {
+                window.setTimeout(function () {
+                    $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                        $(this).remove();
+                    });
+                }, 5000);
+            });
+
+            $("#btnCadastra").click(function () {
+                // Verfica se o formulário está preenchido corretamente
+                if (!$('#form-cadastro')[0].checkValidity()) {
+                    displayMessage("Preencha o formulário corretamente.");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoVacinador = $("#inputVacinador").val();
+                let campoUnidade = $("#inputUnidadeSaude").val();
+                let campoData = $("#inputData").val();
+                let campoTime = $("#inputTime").val();
+                let campoLotacao = $("#inputLotacao").val();
+                let dadosSGI = {
+                    vacinador: campoVacinador,
+                    unidade: campoUnidade,
+                    data: campoData,
+                    lotacao: campoLotacao,
+                    time:campoTime
+                    };
+
+                let campoId = $("#inputId").val();
+                if (campoId != "") {
+                    Alterar(parseInt(campoId), dadosSGI);
+                } else {
+                    Cadastrar(dadosSGI);
+                }
+
+                exibir();
+
+                // Limpa o formulario
+                $("#form-cadastro")[0].reset();
+                document.getElementById('inputVacinador').value = usuarioCorrente.nome;
+                document.getElementById('inputUnidadeSaude').value = usuarioCorrente.unidade;
+            });
+
+            $("#btnEdita").click(function () {
+                // Obtem os valores dos campos do formulário
+                let campoId = $("#inputId").val();
+                if (campoId == "") {
+                    displayMessage("Selecione um item para ser alterado.");
+                    return;
+                }
+                let campoVacinador = $("#inputVacinador").val();
+                let campoUnidade = $("#inputUnidadeSaude").val();
+                let campoData = $("#inputData").val();
+                let campoTime = $("#inputTime").val();
+                let campoLotacao = $("#inputLotacao").val();
+                let dadosSGI = {
+                    vacinador: campoVacinador,
+                    unidade: campoUnidade,
+                    data: campoData,
+                    time: campoTime,
+                    lotacao: campoLotacao,
+              };
+
+                Alterar(parseInt(campoId), dadosSGI);
+
+                exibir();
+
+                // Limpa o formulario
+                $("#form-cadastro")[0].reset();
+                document.getElementById('inputVacinador').value = usuarioCorrente.nome;
+                document.getElementById('inputUnidadeSaude').value = usuarioCorrente.unidade;
+            });
+
+            $("#btnExclui").click(function () {
+                let campoId = $("#inputId").val();
+                if (campoId == "") {
+                    displayMessage("Selecione um item para ser excluído.");
+                    return;
+                }
+                Excluir(parseInt(campoId));
+
+                exibir();
+
+                // Limpa o formulario
+                $("#form-cadastro")[0].reset();
+                document.getElementById('inputVacinador').value = usuarioCorrente.nome;
+                document.getElementById('inputUnidadeSaude').value = usuarioCorrente.unidade;
+            });
+
+            // Oculta a mensagem de aviso após alguns segundos
+            $('#msg').bind("DOMSubtreeModified", function () {
+                window.setTimeout(function () {
+                    $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                        $(this).remove();
+                    });
+                }, 5000);
+            });
+
+
+            $("#btnLimpa").click(function () {
+                $("#form-cadastro")[0].reset();
+                document.getElementById('inputVacinador').value = usuarioCorrente.nome;
+                document.getElementById('inputUnidadeSaude').value = usuarioCorrente.unidade;
+            });
+
+            $("#grid_tabela").on("click", "tr", function (e) {
+                let linha = this;
+                let dadoSelecionado;
+                colunas = linha.querySelectorAll("td");
+
+                for (i = 0; i < db.data.length; i++) {
+                    // Captura o ID (colunas[0]) na tabela e atualiza os dados no formulário 
+                    if (db.data[i].id == parseInt(colunas[0].innerText)) {
+                        dadoSelecionado = db.data[i];
+                    }
+                }
+
+                $("#inputId").val(colunas[0].innerText);
+                $("#inputVacinador").val(dadoSelecionado.vacinador);
+                $("#inputUnidadeSaude").val(dadoSelecionado.unidade);
+                $("#inputData").val(dadoSelecionado.data);
+                $("#inputTime").val(dadoSelecionado.time);
+                $("#inputLotacao").val(dadoSelecionado.lotacao);
+           });
+
+            exibir();
+        }
+    </script>
+</body>
+
+</html>
