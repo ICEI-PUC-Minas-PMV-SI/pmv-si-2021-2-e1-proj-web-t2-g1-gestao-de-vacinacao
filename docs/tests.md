@@ -1,28 +1,43 @@
-# Plano de Testes de Software
-
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
-
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
-
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
-
-# Registro de Testes de Software
+# Testes de Software
 
 Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
 
+|FUNCIONALIDADE | ID TESTE | DESCRIÇÃO | CONDIÇÃO | PASSOS | RESULTADO ESPERADO | SITUAÇÃO | 
+|--------|----------|-----------|--------------|--------|--------------------|-------| 
+| *Home*  | H1 | Validar link *“Home”*  | Ter acesso ao SGI | 1. Abrir a página *Home* <br> 2. Clicar em *“Home”*  | Ao clicar em *Home* o usuário é direcionado a página *Home*  | **OK**  |
+| *Home*  | H2 | Validar link *“Sobre o Projeto”* | Ter acesso ao SGI | 1. Abrir a página *Home*  <br> 2. Clicar em *“Sobre o Projeto”*   | Ao clicar em *Sobre o projeto* é exibido para o usuário uma breve descrição sobre o SGI   | **OK**  |
+| *Home*  | H3 | Validar link *“Ajuda”* | Ter acesso ao SGI | 1. Abrir a página *Home*  <br> 2. Clicar em *“Ajuda”*  | Ao clicar em *Ajuda* o usuário é direcionado a página *Ajuda*  | **OK**  |
+| *Home*  | H4 | Validar link *“Contatos”*  | Ter acesso ao SGI | 1. Abrir a página *Home*  <br> 2. Clicar em *“Contatos”*   | Ao clicar em *Contatos* é exibido para o usuário um endereço de email para suporte | **OK**  |
+| *Home*  | H5 | Validar link *“Login”*  | Ter acesso ao SGI | 1. Abrir a página *Home*  <br> 2. Clicar em *“Contatos”*  | Ao clicar em *Login* o usuário é direcionado a página *Login*  | **NOK**  |
+| *Home*  | H6 | Validar botão *“Pesquisar”*  | Ter acesso ao SGI | 1. Abrir a página *Home* <br> 2. Clicar em *“Pesquisar”* | Ao clicar em *Pesquisar* o usuário é direcionado a página *Onde tem vacina?*  | **NOK**  |
+| *Ajuda*  | A1 | Validar accordion-item *“Sobre o SGI”*  | Ter acesso ao SGI | 1. Abrir a página *Ajuda* <br> 2. Clicar em *“Sobre o SGI”* | Ao clicar em *Sobre o SGI* o dropdown com a descrição do conteúdo é aberto ou fechado  | **OK**  |
+| *Ajuda*  | A2 | Validar accordion-item *“Sobre os locais de vacinação”*  | Ter acesso ao SGI | 1. Abrir a página *Ajuda* <br> 2. Clicar em *“Sobre os locais de vacinação”* | Ao clicar em *Sobre os locais de vacinação* o dropdown com a descrição do conteúdo é aberto ou fechado  | **OK**  |
+| *Ajuda*  | A3 | Validar accordion-item *“Sobre as vacinas”*  | Ter acesso ao SGI | 1. Abrir a página *Ajuda* <br> 2. Clicar em *“Sobre as vacinas”* | Ao clicar em *Sobre as vacinas* o dropdown com a descrição do conteúdo é aberto ou fechado  | **OK**  |
+| *Ajuda*  | A4 | Validar navegação dos links no cabeçalho | Ter acesso ao SGI | 1. Abrir a página *Ajuda* <br> 2. Clicar em *“Home”* <br> 3. Clicar em *“Sobre o projeto”* <br> 4. Clicar em *“Contatos”* <br> 5. Clicar em *“Login”*| Ao clicar nos links descritos nos passos em *Ajuda*, o resultado esperado para o usuário é equivalente aos testes H1, H2, H3, H4 e H5  | **OK**  |
+| *Formulário Anamnese*  | FA1 | Validar botão *“Perfil”* no campo usuário logado | Ter acesso ao SGI | 1. Abrir a página *Formulário Anamnese* <br> 2. Clicar em *“Perfil”* | Ao clicar em *Perfil* é exibido para o Profissional de Saúde o seu Nome e a Unidade de Saúde em que está registrado | **OK**  |
+| *Formulário Anamnese*  | FA2 | Validar botão *“Sair”* no campo usuário logado  | Ter acesso ao SGI | 1. Abrir a página *Formulário Anamnese* <br> 2. Clicar em *“Sair”* | Ao clicar em *Sair* o Profissional de Saúde é deslogado do sistema e é direcionado para página de *Login* | **OK**  |
+| *Formulário Anamnese*  | FA3 | Validar botão *“Cadastrar”* | Ter acesso ao SGI | 1. Abrir a página *Formulário Anamnese* <br> 2. Clicar em *“Cadastrar”* | Ao clicar em *Cadastrar* os `dados corretamente preenchidos no formulário são salvos` na base de dados do SGI, uma mensagem de confirmação é exibida, alguns campos do formulário são exibidos na tabela e a contagem dos registros salvos é atualizada  | **OK**  |
+| *Formulário Anamnese*  | FA4 | Validar botão *“Editar”* | Ter acesso ao SGI | 1. Abrir a página *Formulário Anamnese* <br> 2. Clicar em *“Editar”* | Ao clicar em *Editar* é exibida uma mensagem para orientar o Profissional de Saúde a clicar na célula desejada da tabela para efetuar a edição dos dados no formulário | **OK**  |
+| *Formulário Anamnese*  | FA5 | Validar botão *“Limpar”* | Ter acesso ao SGI | 1. Abrir a página *Formulário Anamnese* <br> 2. Clicar em *“Limpar”* | Ao clicar em *Limpar* os dados preenchidas no formulário são apagados | **OK**  |
+| *Formulário Anamnese*  | FA6 | Validar os campos *“DATA”* no formulário | Ter acesso ao SGI | 1. Abrir a página *Formulário Anamnese* <br> 2. Clicar em *“DATA DE VACINAÇÃO”* <br> 3. Clicar em *“DATA DE NASCIMENTO”* | Ao clicar nos passos 2 ou 3, os dados para preenchimento nos campos *DATA* no formulário são somente aceitos no formato de data DD/MM/YYYY | **OK**  |
+| *Formulário Anamnese*  | FA7 | Validar o campo *“CPF”* no formulário | Ter acesso ao SGI | 1. Abrir a página *Formulário Anamnese* <br> 2. Clicar em *“CPF”* | Ao clicar em *"CPF"*, o dado para preenchimento no campo *CPF* no formulário somente é aceito caso tenha 12 algarismos numéricos | **OK**  |
+
+
 ## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Nos testes de software foram testadas as funcionalidades básicas do sistema e os resultados apresentados para apreciação são visualizados na tabela acima. 
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+Nos pontos fortes pode-se destacar:
+- Interface com recursos simples e objetivos para utilização do usuário: acesso a outras páginas, comandos assertivos e suporte ao usuário.
+- O cumprimento das premissas essenciais ao projeto como o cadastro e registro de pessoas vacinadas. 
+
+Nos pontos fracos pode-se destacar:
+- Falta de interatividade entre as páginas *Filômetro* e *Vacinômetro* com a *Onde tem Vacina?*. Pois, os parâmetros de controle das informações na parte dinâmica do projeto não foram satisfeitas. Itens como disponibilidade de doses e ocupação do local de vacinação não estão habilitados para funcionarem automaticamente.
+- Falta de recursos de busca (ex: geolocalização) para encontrar locais de vacinação mais próximos ao usuário na página *Onde tem Vacina?*.
+- Falta da gestão do perfil Administrador que não foi implementado em *Login*.
+
+Pontos de melhoria futura:
+- Linkagem de todas as páginas do sistema para navegação completa no SGI.
+- Implementação de mecanismos de busca e filtragem na base de dados dos registros salvos no SGI.
+- Implementação de preenchimento de data e hora atual automaticamente.
+
