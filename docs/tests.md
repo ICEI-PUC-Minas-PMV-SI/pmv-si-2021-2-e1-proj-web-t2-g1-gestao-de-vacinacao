@@ -22,6 +22,29 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 | *Formulário Anamnese*  | FA6 | Validar os campos *“DATA”* no formulário | Ter acesso ao SGI | 1. Abrir a página *Formulário Anamnese* <br> 2. Clicar em *“DATA DE VACINAÇÃO”* <br> 3. Clicar em *“DATA DE NASCIMENTO”* | Ao clicar nos passos 2 ou 3, os dados para preenchimento nos campos *DATA* no formulário são somente aceitos no formato de data DD/MM/YYYY | **OK**  |
 | *Formulário Anamnese*  | FA7 | Validar o campo *“CPF”* no formulário | Ter acesso ao SGI | 1. Abrir a página *Formulário Anamnese* <br> 2. Clicar em *“CPF”* | Ao clicar em *"CPF"*, o dado para preenchimento no campo *CPF* no formulário somente é aceito caso tenha 12 algarismos numéricos | **OK**  |
 
+|FUNCIONALIDADE | ID TESTE | DESCRIÇÃO | CONDIÇÃO | PASSOS | RESULTADO ESPERADO | SITUAÇÃO | 
+|--------|----------|-----------|--------------|--------|--------------------|-------| 
+| *Login*  | L1 | Validar link *“Login”*  | Ter acesso ao SGI | 1. Abrir a página *Home* <br> 2. Clicar em *“Login”*  | Ao clicar em *Home* o usuário é direcionado a página *Login*  | **NOK**  |
+| *Login*  | L2 | Validar  *“Usuário”* | Ter acesso ao SGI | 1. Abrir a página *Login*  <br> 2. Clicar e digitar o *“Usuário”*   | Ao clicar em *Entrar* é exibido se o usuário pode ter acesso ou não ao SGI   | **OK**  |
+| *Login*  | L3 | Validar *“Senha”* | Ter acesso ao SGI | 1. Abrir a página *Login*  <br> 2. Clicar e digitar a  *“Senha”*  | Ao clicar em *Entrar* o usuário é exibido se o usuário pode ter acesso ou nao ao SGI  | **OK**  |
+| *Login*  | L4 | *“Usuário e senha”*  válidos | Ter acesso ao SGI | 1. Abrir a página *Login*  <br> 2. Clicar e digitar *“Usuário e Senha”*   | Ao clicar em *Entrar* com o usuário e senha válidos, o usuário é redirecionado para a página do *Filômetro* | **OK**  |
+| *Login*  | L5 | Validar botão *“Entrar”*  | Ter acesso ao SGI | 1. Abrir a página *Login*  <br> 2. Clicar em *“Entrar”*  | Ao clicar em *Entrar* o usuário é direcionado a página *Filômetro*  | **OK**  |
+| *Filômetro*  | F1 | Validar botão *“Perfil”* no campo usuário logado  | Ter acesso ao SGI | 1. Abrir a página *Filômetro* <br> 2. Clicar em *“Perfil”* | Ao clicar em *Perfil* é exibido para o Profissional de Saúde o seu Nome e a Unidade de Saúde em que está registrado | **OK**  |
+| *Filômetro*  | F2 | Validar botão *“Sair”* no campo usuário logado  | Ter acesso ao SGI | 1. Abrir a página *Filômetro* <br> 2. Clicar em *“Sair”* | Ao clicar em *Sair* o Profissional de Saúde é deslogado do sistema e é direcionado para página de *Login* | **OK**  |
+| *Filômetro*  | F3 | Validar botão *“Cadastrar”* | Ter acesso ao SGI | 1. Abrir a página *Filômetro* <br> 2. Clicar em *“Cadastrar”* | Ao clicar em *Cadastrar* os `dados corretamente preenchidos no formulário são salvos` na base de dados do SGI, uma mensagem de confirmação é exibida, alguns campos do formulário são exibidos na tabela e a contagem dos registros salvos é atualizada  | **OK**  |
+| *Filômetro*  | F4 | Validar botão *“Editar”* | Ter acesso ao SGI | 1. Abrir a página *Filômetro* <br> 2. Clicar em *“Editar”* | Ao clicar em *Editar* é exibida uma mensagem para orientar o Profissional de Saúde a clicar na célula desejada da tabela para efetuar a edição dos dados no formulário | **OK**  |
+| *Filômetro*  | F5 | Validar botão *“Limpar”* | Ter acesso ao SGI | 1. Abrir a página *Filômetro* <br> 2. Clicar em *“Limpar”* | Ao clicar em *Limpar* os dados preenchidas no formulário são apagados | **OK**  |
+| *Filômetro*  | F6 | Validar os campos *“DATA”* no formulário | Ter acesso ao SGI | 1. Abrir a página *Filômetro* <br> 2. Clicar em *“DATA”* <br>  | Ao clicar  no campo *DATA* no formulário o preenchimento é apenas  aceito no formato DD/MM/YYYY | **OK**  |
+| *Filômetro*  | F7 | Validar o campo *“HORA”* no formulário | Ter acesso ao SGI | 1. Abrir a página *Filômetro* <br> 2. Clicar em *“HORA”* | Ao clicar em *"HORA"*, o dado para preenchimento no campo *HORA* no formulário somente é aceito no formato hh/mm | **OK**  |
+| *Filômetro*  | F8 | Validar o campo *“LOTAÇÃO”* no formulário | Ter acesso ao SGI | 1. Abrir a página *Filõmetro* <br> 2. Clicar em *“LOTAÇÃO”* | Ao clicar em *"LOTAÇÃO"*, o dado para preenchimento no campo *LOTAÇÃO* no formulário deve ser escolhido entre uma das opções no dropdown. | **OK**  |
+| *Vacinômetro*  | V1 | Validar botão *“Perfil”* no campo usuário logado  | Ter acesso ao SGI | 1. Abrir a página *Vacinômetro* <br> 2. Clicar em *“Perfil”* | Ao clicar em *Perfil* é exibido para o Profissional de Saúde o seu Nome e a Unidade de Saúde em que está registrado | **OK**  |
+| *Vacinômetro*  | V2 | Validar botão *“Sair”* no campo usuário logado  | Ter acesso ao SGI | 1. Abrir a página *Vacinômetro* <br> 2. Clicar em *“Sair”* | Ao clicar em *Sair* o Profissional de Saúde é deslogado do sistema e é direcionado para página de *Login* | **OK**  |
+| *Vacinômetro*  | V3 | Validar botão *“Cadastrar”* | Ter acesso ao SGI | 1. Abrir a página *Vacinômetro* <br> 2. Clicar em *“Cadastrar”* | Ao clicar em *Cadastrar* os `dados corretamente preenchidos no formulário são salvos` na base de dados do SGI, uma mensagem de confirmação é exibida, alguns campos do formulário são exibidos na tabela e a contagem dos registros salvos é atualizada  | **OK**  |
+| *Vacinômetro*  | V4 | Validar botão *“Editar”* | Ter acesso ao SGI | 1. Abrir a página *Vacinômetro* <br> 2. Clicar em *“Editar”* | Ao clicar em *Editar* é exibida uma mensagem para orientar o Profissional de Saúde a clicar na célula desejada da tabela para efetuar a edição dos dados no formulário | **OK**  |
+| *Vacinômetro*  | V5 | Validar botão *“Limpar”* | Ter acesso ao SGI | 1. Abrir a página *Vacinômetro* <br> 2. Clicar em *“Limpar”* | Ao clicar em *Limpar* os dados preenchidas no formulário são apagados | **OK**  |
+| *Vacinômetro*  | V6 | Validar os campos *“DATA”* no formulário | Ter acesso ao SGI | 1. Abrir a página *Vacinômetro* <br> 2. Clicar em *“DATA”* <br>  | Ao clicar  no campo *DATA* no formulário o preenchimento  é apenas  aceito no formato DD/MM/YYYY | **OK**  |
+| *Vacinômetro*  | V7 | Validar o campo *“LABORATÓRIO”* no formulário | Ter acesso ao SGI | 1. Abrir a página *Vacinômetro* <br> 2. Clicar em *“LABORATÓRIO”* | Ao clicar em *"LABORATÓRIO"*, o dado para preenchimento no campo *LABORATÓRIO* no formulário deve ser escolhido entre uma das opçôes no dropdown| **OK**  |
+| *Vacinômetro*  | V8 | Validar o campo *“DOSES DISPONÍVEIS”* no formulário | Ter acesso ao SGI | 1. Abrir a página *VACINÔMETRO* <br> 2. Clicar em *“DOSES”* | Ao clicar em *"DOSES"*, o dado para preenchimento no campo *DOSES* no formulário deve ser escolhido  entre uma das opções no dropdown. | **OK**  |
 
 ## Avaliação
 
@@ -33,11 +56,15 @@ Nos pontos fortes pode-se destacar:
 
 Nos pontos fracos pode-se destacar:
 - Falta de interatividade entre as páginas *Filômetro* e *Vacinômetro* com a *Onde tem Vacina?*. Pois, os parâmetros de controle das informações na parte dinâmica do projeto não foram satisfeitas. Itens como disponibilidade de doses e ocupação do local de vacinação não estão habilitados para funcionarem automaticamente.
+ - Falta de interatividade entre as páginas *Filômetro*, *Vacinômetro* e *Formulário de Anamnese*. Pois, os parâmetros de controle das informações na parte dinâmica do projeto não foram satisfeitas. 
+  - Falta de interatividade entre as páginas do *Administrador*. Pois, os parâmetros de controle das informações na parte dinâmica do projeto não foram satisfeitas. 
 - Falta de recursos de busca (ex: geolocalização) para encontrar locais de vacinação mais próximos ao usuário na página *Onde tem Vacina?*.
-- Falta da gestão do perfil Administrador que não foi implementado em *Login*.
+- Falta da gestão do perfil Administrador que não foi implementado em *Login* por problemas no grupo e prazo.
+-Falta do mecanismo principal do sistema, a contagem regressiva de vacinas em tempo real.
 
 Pontos de melhoria futura:
 - Linkagem de todas as páginas do sistema para navegação completa no SGI.
 - Implementação de mecanismos de busca e filtragem na base de dados dos registros salvos no SGI.
 - Implementação de preenchimento de data e hora atual automaticamente.
+- Implementação de um recurso de geolocalização.
 
