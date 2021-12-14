@@ -15,7 +15,6 @@ Criação de um modelo de Sistema Web para gestão de vacinação contra Covid-1
 * Geocacio Viviano Nascimento de Souza
 * Lucas Fonseca do Nascimento
 * Vinicius Menezes Gomes
-* Wesley Gabriel dos Santos Pereira
 
 ## Orientador
 
