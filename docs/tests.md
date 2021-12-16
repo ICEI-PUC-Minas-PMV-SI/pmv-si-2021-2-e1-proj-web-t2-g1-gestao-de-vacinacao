@@ -62,7 +62,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 | *Cadastramento de Vacinas*  | K1 | Validar botão *“Adicionar”* | Ter acesso ao SGI | 1. Abrir a página *Cadastramento de Vacinas* <br> 2. Clicar em *“Adicionar”* | Ao colocar a quantidade de vacinas que deseja adicionar e clicar em *Adicionar* vai estar somando o valor adicionado com o valor ja salvo  | **OK**    |
 | *Cadastramento de Vacinas*  | K2 | Validar botão *“Adicionar”* | Ter acesso ao SGI | 1. Abrir a página *Cadastramento de Vacinas* <br> 2. Clicar em *“Adicionar”* | Ao clicar em *Adicionar* vai estar abrindo uma modal para confirmação de quantidade que deseja ser adicionada   | **OK**    |
 | *Cadastramento de Vacinas*  | K3 | Validar botão *“Apagar”* | Ter acesso ao SGI | 1. Abrir a página *Cadastramento de Vacinas* <br> 2. Clicar em *“apagar”* | Ao clicar em *Apagar* vai estar apagando o valor completo  | **OK**    |
-| *Cadastramento de Vacinas*  | K4 | Validar botão *“Apagar”* | Ter acesso ao SGI | 1. Abrir a página *Cadastramento de Vacinas* <br> 2. Clicar em *“Apagar”* | Ao clicar em *Apagar* vai estar abrindo uma modal para confirmação de quantidade que deseja apagar  | **OK**    |
+| *Cadastramento de Vacinas*  | K4 | Validar botão *“Apagar”* | Ter acesso ao SGI | 1. Abrir a página *Cadastramento de Vacinas* <br> 2. Clicar em *“Apagar”* | Ao clicar em *Apagar* vai estar abrindo uma modal para confirmação de quantidade que deseja apagar  | **NOK**    |
 
 
 
