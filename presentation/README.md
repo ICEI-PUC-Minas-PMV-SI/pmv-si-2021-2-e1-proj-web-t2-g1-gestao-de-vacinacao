@@ -1,25 +1,33 @@
-# Apresentação
+Apresentação do Projeto
 
-Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
 
-## Título do Projeto
+![Apresentação1](https://user-images.githubusercontent.com/89883340/146450519-0888ecbb-e3c0-4e7d-a81c-c3073dcdf7d0.png)
+![Apresentação2](https://user-images.githubusercontent.com/89883340/146450647-374868c1-c8fe-4452-a42e-b748c778b4bf.png)
+![Apresentação3](https://user-images.githubusercontent.com/89883340/146450758-4f82557b-9a5e-4779-a363-711afb7f6927.png)
+![Apresentação4](https://user-images.githubusercontent.com/89883340/146450768-e4abde0c-1477-4843-ac67-b8258fa10ef0.png)
+![Apresentação5](https://user-images.githubusercontent.com/89883340/146450836-dbbac2d6-90ea-4d08-ab74-6ecfafe7a051.png)
+![Apresentação6](https://user-images.githubusercontent.com/89883340/146450898-dfc4b894-7941-428e-8ecd-4b29157ba941.png)
+![Apresentação7](https://user-images.githubusercontent.com/89883340/146450953-dcc4c534-d243-4157-8ae2-20a382842c7a.png)
+![Apresentação8](https://user-images.githubusercontent.com/89883340/146451595-ffa8d489-b470-436b-b767-9530fe6b2c71.png)
+![Apresentação9](https://user-images.githubusercontent.com/89883340/146451622-aa4680d0-409d-49cd-a1bd-64c3b8679576.png)
+![Apresentação10](https://user-images.githubusercontent.com/89883340/146451668-32e78002-4aed-4c7b-9cef-ed404b82cbcd.png)
 
-Nome e marca do projeto
 
-## Identidade Visual (Marca, Design)
 
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
 
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
 
-## Conjunto de Slides (Estrutura)
 
-O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos.
- 
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
