@@ -1,0 +1,146 @@
+/* Definições globais*/
+
+@charset "utf-8";
+
+/* Fontes */
+
+*{
+    font-family: "Times New Roman", Times, serif, sans-serif;
+}
+
+/* Paleta de cores */
+
+.bg-primary-color{
+    background-color: #0152af;
+}
+
+.primary-color{
+    color: white;
+}
+
+.secondary-color{
+    color: #7a7a7a;
+}
+
+/* HTML */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+/* Body */
+
+body {
+    margin-top: 118px;
+    margin-bottom: 80px;
+    background-color: #cae4fa;  
+}
+ 
+/* Header*/
+
+/* Navbar*/
+
+#navbar a:hover{
+    color: #a0abca;
+}
+
+.btn-nav{
+    text-decoration: none;
+}
+
+.btn-nav:hover{
+    color: #a0abca;  
+}
+
+#navbar a.active{
+    border-bottom: 1px solid white;
+}
+
+.navbar-brand{
+    display: flex;
+}
+
+.navbar-brand img{
+    width: 50px;
+}
+
+#navbar-items .navbar-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbar-items .nav-item{
+    margin: 0 3em;
+}
+
+.margem-esq{
+    margin-left: 13px;
+}
+
+
+
+/* Tela Home */
+
+#home{
+    width: 100vw;
+    height: calc(100vh - 198px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Tela Ajuda */
+
+#accordion{
+    width: 100%;
+}
+
+#termos > p, #privacidade > p{
+    background-color:white;
+    margin: 1em;
+    text-align: justify;
+}
+
+section h5, section h6{
+    padding: 1em;
+    margin-left: 1.5em;
+}
+
+section ul{
+    margin: 0 1em;
+    text-align: justify;
+}
+
+/* Modal */
+
+.modal-body{
+    text-align: justify;
+}
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #0152af;
+    color: white;
+}
+
+.footer > .container {
+    margin-top: 24px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (max-width: 415px){
+    .footer > .container {
+        margin-top: 17px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
