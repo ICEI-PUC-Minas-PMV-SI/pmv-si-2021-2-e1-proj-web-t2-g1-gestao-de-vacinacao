@@ -21,9 +21,6 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 | *Formulário Anamnese*  | FA5 | Validar botão *“Limpar”* | Ter acesso ao SGI | 1. Abrir a página *Formulário Anamnese* <br> 2. Clicar em *“Limpar”* | Ao clicar em *Limpar* os dados preenchidas no formulário são apagados | **OK**  |
 | *Formulário Anamnese*  | FA6 | Validar os campos *“DATA”* no formulário | Ter acesso ao SGI | 1. Abrir a página *Formulário Anamnese* <br> 2. Clicar em *“DATA DE VACINAÇÃO”* <br> 3. Clicar em *“DATA DE NASCIMENTO”* | Ao clicar nos passos 2 ou 3, os dados para preenchimento nos campos *DATA* no formulário são somente aceitos no formato de data DD/MM/YYYY | **OK**  |
 | *Formulário Anamnese*  | FA7 | Validar o campo *“CPF”* no formulário | Ter acesso ao SGI | 1. Abrir a página *Formulário Anamnese* <br> 2. Clicar em *“CPF”* | Ao clicar em *"CPF"*, o dado para preenchimento no campo *CPF* no formulário somente é aceito caso tenha 12 algarismos numéricos | **OK**  |
-
-|FUNCIONALIDADE | ID TESTE | DESCRIÇÃO | CONDIÇÃO | PASSOS | RESULTADO ESPERADO | SITUAÇÃO | 
-|--------|----------|-----------|--------------|--------|--------------------|-------| 
 | *Login*  | L1 | Validar link *“Login”*  | Ter acesso ao SGI | 1. Abrir a página *Home* <br> 2. Clicar em *“Login”*  | Ao clicar em *Home* o usuário é direcionado a página *Login*  | **NOK**  |
 | *Login*  | L2 | Validar  *“Usuário”* | Ter acesso ao SGI | 1. Abrir a página *Login*  <br> 2. Clicar e digitar o *“Usuário”*   | Ao clicar em *Entrar* é exibido se o usuário pode ter acesso ou não ao SGI   | **OK**  |
 | *Login*  | L3 | Validar *“Senha”* | Ter acesso ao SGI | 1. Abrir a página *Login*  <br> 2. Clicar e digitar a  *“Senha”*  | Ao clicar em *Entrar* o usuário é exibido se o usuário pode ter acesso ou nao ao SGI  | **OK**  |
