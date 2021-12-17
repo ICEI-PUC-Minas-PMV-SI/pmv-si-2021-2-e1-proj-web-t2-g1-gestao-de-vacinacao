@@ -1,5 +1,5 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=443948&assignment_repo_type=GroupAssignmentRepo)
-# GESTÃO DA VACINAÇÃO
+# SGI Covid-19
 
 `CURSO: Sistemas de Informação`
 
@@ -7,7 +7,7 @@
 
 `SEMESTRE: 1º`
 
-Criação de um modelo de Sistema Web para gestão de vacinação contra Covid-19 que auxilie os profissionais de saúde, proporcionando melhor organização dos dados de vacinação, e um canal de informação entre a população e os postos de saúde.   
+O Sistema de Gestão para Imunização contra Covid-19 é uma proposta de desenvolvimento de um Sistema Web para gestão de vacinação contra Covid-19, com o objetivo de auxiliar os profissionais de saúde na administração dos dados das pessoas imunizadas e da quantidade de doses de vacinas disponíveis nos locais de vacinação. Além de disponibilizar um canal de informações atualizadas para consulta da população sobre a campanha de vacinação contra Covid-19. O exemplo de aplicação do SGI Covid-19 é apresentado para a cidade de Betim/MG.   
 
 ## Integrantes
 
