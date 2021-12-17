@@ -1,7 +1,5 @@
 Apresentação do Projeto
 
-https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2021-2-e1-proj-web-t2-g1-gestao-de-vacinacao/blob/93538a3beecdbd2e0574fd436b1092da727f3637/Apresentac%CC%A7a%CC%83o%20Projeto%20SGI%202.pdf
-
 ![Apresentação1](https://user-images.githubusercontent.com/89883340/146450519-0888ecbb-e3c0-4e7d-a81c-c3073dcdf7d0.png)
 ![Apresentação2](https://user-images.githubusercontent.com/89883340/146450647-374868c1-c8fe-4452-a42e-b748c778b4bf.png)
 ![Apresentação3](https://user-images.githubusercontent.com/89883340/146450758-4f82557b-9a5e-4779-a363-711afb7f6927.png)
