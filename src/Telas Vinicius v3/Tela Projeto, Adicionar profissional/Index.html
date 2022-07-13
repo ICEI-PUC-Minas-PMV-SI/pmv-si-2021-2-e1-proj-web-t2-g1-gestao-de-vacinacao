@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JS para dados do Usuário logado  -->
+    <script src="login.js"></script>
+    <script>
+        if (!usuarioCorrente.login) {
+            window.location.href = LOGIN_URL;
+        }
+
+        function initPage() {
+            document.getElementById('btn_logout').addEventListener('click', logoutUser);
+
+            document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.login;
+            document.getElementById('nomeUsuarioPerfil').innerHTML = usuarioCorrente.nome;
+            document.getElementById('nomeUnidadePerfil').innerHTML = usuarioCorrente.unidade;
+
+            document.getElementById('inputVacinador').value = usuarioCorrente.nome;
+            document.getElementById('inputUnidadeSaude').value = usuarioCorrente.unidade;
+        }
+        window.addEventListener('load', initPage);
+    </script>
+
+    <title>Cadastro de Profissional </title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo (2).png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"
+        defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"
+        defer></script>
+
+    <!-- CSS do projeto  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init()">
+    <header class="container" id="header">
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+                <a href="#" class="navbar-brand primary-color">
+                    <img src="img/logo.png" alt="SGI">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Login de Profissional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link primary-color" aria-current="page">Excluir Profissional</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active primary-color" aria-current="page">Cadastro de Profissional</a>
+                        </li>
+                        <li class="nav-item">
+
+                            <div class="input-group">
+                                <span class="form-control secondary-color" id="nomeUsuario"></span>
+                                <span class="input-group-text">
+                                    <a href="#" class="d-block link-primary text-decoration-none dropdown-toggle"
+                                        id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-person-circle"></i>
+                                    </a>
+                                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                                        <li><button type="button" class="dropdown-item" data-toggle="modal"
+                                                data-target="#perfilModal">Perfil</button></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" id="btn_logout">Sair</a></li>
+                                    </ul>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container center">
+        <div class="row">
+            <div id="msg" class="col-sm-10 offset-sm-1 ">
+                <!--<div class="alert alert-warning">Contato não encontrado.</div>-->
+            </div>
+        </div>
+    </section>
+
+    <main class="container" id="cadastro">
+        <h2 class="text-center">Cadastro do Profissional da Saúde</h2>
+        <form class="row g-2 was-validated" id="form-cadastro">
+            <!-- ID -->
+            <div class="col-1 mt-2">
+                <label for="inputId" class="form-label">ID:</label>
+                <input type="text" class="form-control" id="inputId" disabled>
+            </div>
+            <!--  Vacinador -->
+           
+          
+            <!-- Data e Unidade de Saúde -->
+            <div class="col-3 mt-2">
+                <label for="inputData" class="form-label">DATA DE INCLUSÂO:</label>
+                <input type="date" class="form-control" id="inputData" name="inputData" required>
+            </div
+            <!-- Laboratório, lote e dose -->
+            <div class="col-lg-3 col-md-3 mt-2">
+                <div class="row justify-content-center">
+                    
+                    <label for="sexo" class="form-label">SELECIONE A BAIXO A UNIDADE :</label>
+                   
+                </div>
+                <select class="form-select text-center" name="laboratorio" id="inputLaboratorio" required>
+                    <option selected></option>
+                    <option value="UBS ALCIDES BRAZ">UBS ALCIDES BRAZ</option>
+                    <option value="UBS ANTÔNIO JOSÉ SALOMÃO–ALTEROSAS">UBS ANTÔNIO JOSÉ SALOMÃO–ALTEROSAS</option>
+                    <option value="UBS ANTÔNIO SABINO DE SOUZA –IMBIRUÇU">UBS ANTÔNIO SABINO DE SOUZA –IMBIRUÇU</option>
+                    <option value="UBS ANTÔNIO CAETANO –LARANJEIRAS">UBS ANTÔNIO CAETANO –LARANJEIRAS</option>
+                    <option value="UBS ANTONIO BERNARDES –PARQUE DO CEDRO">UBS ANTONIO BERNARDES –PARQUE DO CEDRO</option>
+                    <option value="UBS CRISTOVINA C. G. SOUZA–BEMGE">UBS CRISTOVINA C. G. SOUZA–BEMGE</option>
+                    <option value="UBS CRUZEIRO DO SUL">UBS CRUZEIRO DO SUL</option>
+                    <option value="UBS CITROLÂNDIA">UBS CITROLÂNDIA</option>
+                    <option value="UBS CAMPOS ELÍSEOS">UBS CAMPOS ELÍSEOS</option>
+                    <option value="UBS CAIC">UBS CAIC</option>
+                    <option value="UBS DR. ROGÉRIO GUSTAVO REZENDE–ANGOLA">UBS DR. ROGÉRIO GUSTAVO REZENDE–ANGOLA</option>
+                    <option value="UBS DOM BOSCO">UBS DOM BOSCO</option>
+                    <option value="UBS DUQUE DE CAXIAS">UBS DUQUE DE CAXIAS</option>
+                    <option value="UBS DR. MANOEL JUVÊNCIO –CIDADE VERDE">UBS DR. MANOEL JUVÊNCIO –CIDADE VERDE</option>
+                    <option value="UBS EDUARDO A. ROCHA –PETROVALE">UBS EDUARDO A. ROCHA –PETROVALE</option>
+                    <option value="UBS GERALDINA AUGUSTA BRAGA –PTB">UBS GERALDINA AUGUSTA BRAGA –PTB</option>
+                    <option value="UBS GENI ROSA DOS SANTOS –VILA RECREIO">UBS GENI ROSA DOS SANTOS –VILA RECREIO</option>
+                    <option value="UBS HOMERO GIL">UBS HOMERO GIL</option>
+                    <option value="UBS JOÃO GREGÓRIO FERREIRA –ALVORADA">UBS JOÃO GREGÓRIO FERREIRA –ALVORADA</option>
+                    <option value="UBS JOÃO NARCISO DE BARROS –UNIVERSAL –ALVORADA">UBS JOÃO NARCISO DE BARROS –UNIVERSAL –ALVORADA</option>
+                    <option value="UBS MARIMBÁ">UBS MARIMBÁ</option>
+                    <option value="UBS MARLY ROSA DA SILVA TOMÉ –COLÔNIA SANTA ISABEL –BUENO FRANCO">UBS MARLY ROSA DA SILVA TOMÉ –COLÔNIA SANTA ISABEL –BUENO FRANCO</option>
+                    <option value="UBS MARIA OLIVEIRA SILVA –BUENO FRANCO">UBS MARIA OLIVEIRA SILVA –BUENO FRANCO</option>
+                    <option value="UBS NEUSA MARIA BARBIZAN FERREIRA –TRINCHEIRA">UBS NEUSA MARIA BARBIZAN FERREIRA –TRINCHEIRA</option>
+                    <option value="UBS NOSSA SENHORA DE FÁTIMA">UBS NOSSA SENHORA DE FÁTIMA</option>
+                    <option value="UBS NOVO AMAZONAS">UBS NOVO AMAZONAS</option>
+                    <option value="UBS OSVALDO CRUZ –VIANÓPOLIS">UBS OSVALDO CRUZ –VIANÓPOLIS</option>
+                    <option value="UBS PAULO CAMILO">UBS PAULO CAMILO</option>
+                    <option value="UBS ROSA CAPUCHE –JARDIM PETRÓPOLIS">UBS ROSA CAPUCHE –JARDIM PETRÓPOLIS</option>
+                    <option value="UBS ROSA MIGUEL SALOMÃO -BANDEIRINHAS">UBS ROSA MIGUEL SALOMÃO -BANDEIRINHAS</option>
+                    <option value="UBS REGINALDO SILVA –ICAIVERA">UBS REGINALDO SILVA –ICAIVERA</option>
+                    <option value="UBS SONIA AUGUSTA DOS SANTOS SILVA -TERESÓPOLIS">UBS SONIA AUGUSTA DOS SANTOS SILVA -TERESÓPOLIS</option>
+                    <option value="UBS VILA CRISTINA">UBS VILA CRISTINA</option>
+                    <option value="UBS VIRGÍNIA MARIADE CARVALHO -NOVA BADEN">UBS VIRGÍNIA MARIADE CARVALHO -NOVA BADEN</option>
+                    <option value="UBS WILSON OLIVEIRA ANTUNES –CACHOEIRA">UBS WILSON OLIVEIRA ANTUNES –CACHOEIRA</option>
+                    <option value="UBS WALDEMAR GOMES DE OLIVEIRA –GUANABARA">UBS WALDEMAR GOMES DE OLIVEIRA –GUANABARA</option>
+                </select>
+            </div>
+           
+            <div class="col-lg-3 col-md-4 col-sm-5 align-self-center">
+                <div class="row justify-content-center">
+                    <label for="sexo" class="form-label">INFORME O TIPO DE PROFISSIONAL:</label>
+                </div>
+                <div class="row justify-content-center g-0">
+                    <select class="form-select text-center" name="dose" id="inputDose" required>
+                        <option selected></option>
+                        <option value="Vacinador">Vacinador</option>
+                        <option value="Primeira">1ª</option>
+                        <option value="Segunda">2ª</option>
+                        <option value="Reforço">Reforço</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Nome -->
+            <div class="col-12 mt-2">
+                <label for="inputNome" class="form-label">NOME DO PROFISSIONAL:</label>
+                <input type="text" class="form-control" id="inputNome" required>
+            </div>
+            <!-- CPF -->
+            <div class="col-sm-4 col-lg-3 mt-2 align-self-end">
+                <label for="inputCPF" class="form-label">CPF DO PROFISSIONAL:</label>
+                <input type="text" class="form-control" id="inputCPF" required pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+                    title="Digite só os números do CPF">
+            </div>
+            <!-- Data de nascimento, idade e sexo -->
+            
+            <div class="col-sm-3 mt-2 align-self-end">
+                <label for="inputIdade" class="form-label">IDADE DO PROFISSIONAL:</label>
+                <input type="text" class="form-control" id="inputIdade" required>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-5 g-2 align-self-end">
+                <div class="row justify-content-center">
+                    <label for="sexo" class="form-label">SEXO:</label>
+                </div>
+                <div class="row justify-content-center g-0">
+                    <select class="form-select text-center" name="sexo" id="inputSexo" required>
+                        <option selected></option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Masculino">Masculino</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Botões -->
+            <div class="col-12 justify-content-end mt-3">
+                <div class="d-grid gap-2 d-flex justify-content-end">
+                    <input type="submit" class="btn btn-success" id="btnCadastra" value="Cadastrar">
+                    <input type="button" class="btn btn-warning" id="btnEdita" value="Editar">
+                    <input type="button" class="btn btn-danger" id="btnExclui" value="Excluir">
+                    <input type="button" class="btn btn-secondary" id="btnLimpa" value="Limpar">
+                </div>
+        </form>
+    </main>
+
+    <section class="container info" id="info">
+        <div>
+            <h4>Profissionais Cadastrados: <span id="vacinados"></span></h4>
+        </div>
+        <table id="grid_tabela" class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome do Profissional</th>
+                    <th scope="col">CPF do Profissional</th>
+                    <th scope="col">Idade do Profissional</th>
+                    <th scope="col">Data de Inclusão </th>
+                    <th scope="col">Unidade do Profissional</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-dados">
+                <td scope="row">1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tbody>
+        </table>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <h6>Sistema de Gestão para Imunização contra COVID-19 &copy; 2021</h6>
+        </div>
+    </footer>
+
+    <!-- Modal Perfil do Usuário -->
+    <div class="modal fade" id="perfilModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Dados do Usuário</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="perfil-box" class="col-md-12">
+                        <form id="login-form" class="form">
+                            <div class="form-group">
+                                <label class="form-label">Usuário:</label>
+                                <span id="nomeUsuarioPerfil"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Unidade:</label>
+                                <span id="nomeUnidadePerfil"></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Fechar</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function exibir() {
+            // Remove todas as linhas do corpo da tabela
+            $("#tabela-dados").html("");
+
+            // Popula a tabela com os registros do banco de dados
+            for (i = 0; i < db.data.length; i++) {
+                let dado = db.data[i];
+
+                let arrayData = dado.data.split('-');
+                let novaData = arrayData[2] + '-' + arrayData[1] + '-' + arrayData[0];
+
+                $("#tabela-dados").append(`<tr><td scope="row">${dado.id}</td>
+                                                <td>${dado.nome}</td>
+                                                <td>${dado.cpf}</td>
+                                                <td>${dado.idade}</td>
+                                                <td>${novaData}</td>
+                                                <td>${dado.laboratorio}</td>
+                                            </tr>`);
+
+            }
+
+            document.getElementById('vacinados').innerHTML = db.data.length;
+        }
+
+        function init() {
+            $('#msg').bind("DOMSubtreeModified", function () {
+                window.setTimeout(function () {
+                    $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                        $(this).remove();
+                    });
+                }, 5000);
+            });
+
+            $("#btnCadastra").click(function () {
+                // Verfica se o formulário está preenchido corretamente
+                if (!$('#form-cadastro')[0].checkValidity()) {
+                    displayMessage("Preencha o formulário corretamente.");
+                    return;
+                }
+
+                // Obtem os valores dos campos do formulário
+                let campoVacinador = $("#inputVacinador").val();
+                let campoUnidade = $("#inputUnidadeSaude").val();
+                let campoData = $("#inputData").val();
+                let campoLaboratorio = $("#inputLaboratorio").val();
+                let campoLote = $("#inputLote").val();
+                let campoDose = $("#inputDose").val();
+                let campoNome = $("#inputNome").val();
+                let campoCPF = $("#inputCPF").val();
+                let campoDataNascimento = $("#inputDataNascimento").val();
+                let campoIdade = $("#inputIdade").val();
+                let campoSexo = $("#inputSexo").val();
+                let dadosSGI = {
+                    vacinador: campoVacinador,
+                    unidade: campoUnidade,
+                   data: campoData,
+                    laboratorio: campoLaboratorio,
+                    lote: campoLote,
+                    dose: campoDose,
+                    nome: campoNome,
+                    cpf: campoCPF,
+                    datanascimento: campoDataNascimento,
+                    idade: campoIdade,
+                    sexo: campoSexo
+                };
+
+                let campoId = $("#inputId").val();
+                if (campoId != "") {
+                    Alterar(parseInt(campoId), dadosSGI);
+                } else {
+                    Cadastrar(dadosSGI);
+                }
+
+                exibir();
+
+                // Limpa o formulario
+                $("#form-cadastro")[0].reset();
+                document.getElementById('inputVacinador').value = usuarioCorrente.nome;
+                document.getElementById('inputUnidadeSaude').value = usuarioCorrente.unidade;
+            });
+
+            $("#btnEdita").click(function () {
+                // Obtem os valores dos campos do formulário
+                let campoId = $("#inputId").val();
+                if (campoId == "") {
+                    displayMessage("Selecione um item para ser alterado.");
+                    return;
+                }
+                let campoVacinador = $("#inputVacinador").val();
+                let campoUnidade = $("#inputUnidadeSaude").val();
+                let campoData = $("#inputData").val();
+                let campoLaboratorio = $("#inputLaboratorio").val();
+                let campoLote = $("#inputLote").val();
+                let campoDose = $("#inputDose").val();
+                let campoNome = $("#inputNome").val();
+                let campoCPF = $("#inputCPF").val();
+                let campoDataNascimento = $("#inputDataNascimento").val();
+                let campoIdade = $("#inputIdade").val();
+                let campoSexo = $("#inputSexo").val();
+                let dadosSGI = {
+                    vacinador: campoVacinador,
+                    unidade: campoUnidade,
+                    data: campoData,
+                    laboratorio: campoLaboratorio,
+                    lote: campoLote,
+                    dose: campoDose,
+                    nome: campoNome,
+                    cpf: campoCPF,
+                    datanascimento: campoDataNascimento,
+                    idade: campoIdade,
+                    sexo: campoSexo
+                };
+
+                Alterar(parseInt(campoId), dadosSGI);
+
+                exibir();
+
+                // Limpa o formulario
+                $("#form-cadastro")[0].reset();
+                document.getElementById('inputVacinador').value = usuarioCorrente.nome;
+                document.getElementById('inputUnidadeSaude').value = usuarioCorrente.unidade;
+            });
+
+            $("#btnExclui").click(function () {
+                let campoId = $("#inputId").val();
+                if (campoId == "") {
+                    displayMessage("Selecione um item para ser excluído.");
+                    return;
+                }
+                Excluir(parseInt(campoId));
+
+                exibir();
+
+                // Limpa o formulario
+                $("#form-cadastro")[0].reset();
+                document.getElementById('inputVacinador').value = usuarioCorrente.nome;
+                document.getElementById('inputUnidadeSaude').value = usuarioCorrente.unidade;
+            });
+
+            // Oculta a mensagem de aviso após alguns segundos
+            $('#msg').bind("DOMSubtreeModified", function () {
+                window.setTimeout(function () {
+                    $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                        $(this).remove();
+                    });
+                }, 5000);
+            });
+
+
+            $("#btnLimpa").click(function () {
+                $("#form-cadastro")[0].reset();
+                document.getElementById('inputVacinador').value = usuarioCorrente.nome;
+                document.getElementById('inputUnidadeSaude').value = usuarioCorrente.unidade;
+            });
+
+            $("#grid_tabela").on("click", "tr", function (e) {
+                let linha = this;
+                let dadoSelecionado;
+                colunas = linha.querySelectorAll("td");
+
+                for (i = 0; i < db.data.length; i++) {
+                    // Captura o ID (colunas[0]) na tabela e atualiza os dados no formulário 
+                    if (db.data[i].id == parseInt(colunas[0].innerText)) {
+                        dadoSelecionado = db.data[i];
+                    }
+                }
+
+                $("#inputId").val(colunas[0].innerText);
+                $("#inputVacinador").val(dadoSelecionado.vacinador);
+                $("#inputUnidadeSaude").val(dadoSelecionado.unidade);
+                $("#inputData").val(dadoSelecionado.data);
+                $("#inputLaboratorio").val(dadoSelecionado.laboratorio);
+                $("#inputLote").val(dadoSelecionado.lote);
+                $("#inputDose").val(dadoSelecionado.dose);
+                $("#inputNome").val(dadoSelecionado.nome);
+                $("#inputCPF").val(dadoSelecionado.cpf);
+                $("#inputDataNascimento").val(dadoSelecionado.datanascimento);
+                $("#inputIdade").val(dadoSelecionado.idade);
+                $("#inputSexo").val(dadoSelecionado.sexo);
+            });
+
+            exibir();
+        }
+    </script>
+</body>
+
+</html>
